@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "ad": "https://agent-network-protocol.com/ad#"
+  },
+  "@type": "CollectionPage",
+  "url": "https://api.kingkazmax.ai/.well-known/agent-descriptions",
+  "items": [
+    {
+      "@type": "ad:AgentDescription",
+      "name": "KINGKAZMAX",
+      "@id": "https://api.kingkazmax.ai/agents/main/ad.json",
+      "description": "🏆 多重分身AI超级智能体系统"
+    }
+  ],
+  "metadata": {
+    "totalItems": 1,
+    "generator": "KINGKAZMAX v1.0.0",
+    "lastUpdated": "2026-05-03T04:58:13.495025"
+  }
+}
