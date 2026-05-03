@@ -64,6 +64,13 @@ async def chat(request: Request):
     model = body.get("model", "gpt-4o-mini")
     stream = body.get("stream", False)
 
+    # Support single message shorthand: {"message": "hello"} → [{"role":"user","content":"hello"}]
+    if not messages and body.get("message"):
+        messages = [{"role": "user", "content": body["message"]}]
+
+    if not messages:
+        return JSONResponse({"error": "messages or message field required"}, status_code=400)
+
     if model not in MODELS:
         model = "gpt-4o-mini"
 
@@ -77,13 +84,18 @@ async def chat(request: Request):
         "stream": stream,
     }
 
-    if not stream:
-        resp = requests.post(f"{API_BASE}/chat/completions", headers=headers, json=payload, timeout=60)
-        data = resp.json()
-        answer = data["choices"][0]["message"]["content"]
-        poi = make_poi_entry(messages[-1]["content"], model, answer, 0.95)
-        poi_log.append(poi)
-        return {"answer": answer, "model": model, "poi": poi, "usage": data.get("usage", {})}
+    try:
+        if not stream:
+            resp = requests.post(f"{API_BASE}/chat/completions", headers=headers, json=payload, timeout=60)
+            data = resp.json()
+            if "error" in data:
+                return JSONResponse({"error": data["error"]}, status_code=502)
+            answer = data["choices"][0]["message"]["content"]
+            poi = make_poi_entry(messages[-1]["content"], model, answer, 0.95)
+            poi_log.append(poi)
+            return {"answer": answer, "model": model, "poi": poi, "usage": data.get("usage", {})}
+    except Exception as e:
+        return JSONResponse({"error": str(e)}, status_code=500)
 
     # Streaming
     def gen():

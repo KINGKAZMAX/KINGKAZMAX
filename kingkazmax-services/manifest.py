@@ -81,10 +81,12 @@ def meta():
     }
 
 @app.get("/manifest")
+@app.post("/manifest")
 def get_manifest():
     return MANIFEST
 
 @app.get("/topology")
+@app.post("/topology")
 def get_topology():
     return {
         "graph": {

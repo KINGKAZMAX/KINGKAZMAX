@@ -137,6 +137,7 @@ async def settle(request: Request):
 
 
 @app.get("/channels")
+@app.post("/channels")
 def list_channels():
     """List all payment channels (for audit)."""
     return {"channels": list(payment_channels.values()), "total": len(payment_channels)}

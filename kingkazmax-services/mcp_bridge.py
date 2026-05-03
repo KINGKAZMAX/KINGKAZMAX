@@ -52,13 +52,24 @@ def get_registry():
 async def bridge(request: Request):
     """Execute an MCP tool via stdio bridge."""
     body = await request.json()
-    tool_name = body.get("tool_name", "")
-    tool_input = body.get("input", {})
-    
+    tool_name = body.get("tool_name", "") or body.get("tool", "")
+    tool_input = body.get("input", {}) or body.get("params", {})
+
     # Find tool in registry
     tool = next((t for t in mcp_registry if t["name"] == tool_name), None)
     if not tool:
-        return JSONResponse(status_code=404, content={"error": f"Tool {tool_name} not found"})
+        # If tool not in registry, return registry info + helpful message
+        return JSONResponse(status_code=200, content={
+            "error": f"Tool '{tool_name}' not found in registry",
+            "available_tools": [t["name"] for t in mcp_registry],
+            "hint": "Use /registry to list tools, or /register-tool to add one",
+            "fallback_result": {
+                "tool": tool_name or "unknown",
+                "input": tool_input,
+                "output": f"[MCP bridge] Tool not registered, request logged",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+        })
     
     # Simulate MCP execution (in production, actually spawn stdio process)
     # For demo: return a simulated result

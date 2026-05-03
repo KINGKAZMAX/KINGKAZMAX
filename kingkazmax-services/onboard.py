@@ -39,6 +39,7 @@ def meta():
     }
 
 @app.get("/quests")
+@app.post("/quests")
 def get_quests():
     return {"quests": QUESTS, "total_levels": len(QUESTS)}
 
