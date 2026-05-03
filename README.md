@@ -1,162 +1,220 @@
 <div align="center">
 
-# 👑 KINGKAZMAX Product Suite
+# 👑 KINGKAZMAX — P2P LLM OS
 
-### Agent Network P2P 黑客松参赛项目
+### Agent Network Hackathon 2026 · 南客松专项赛道
 
-**19个P2P微服务 · 3大产品方向 · 完整AI服务市场**
+**P2P LLM 基础设施协议 — 一个地址，19 个 AI 能力，按调用计费**
 
-[![Agent Network](https://img.shields.io/badge/Agent-Network-blue)](https://agentnetwork.org.cn)
-[![Services](https://img.shields.io/badge/Services-19-green)](#-服务矩阵)
-[![DID](https://img.shields.io/badge/DID-decentralized-purple)](#-身份信息)
+[![Agent Network](https://img.shields.io/badge/Agent_Network-P2P_Live-blue)](https://agentnetwork.org.cn)
+[![Services](https://img.shields.io/badge/Services-19_LIVE-brightgreen)](https://github.com/KINGKAZMAX/KINGKAZMAX)
+[![Owners](https://img.shields.io/badge/Owners-3_Independent-purple)](https://github.com/KINGKAZMAX/KINGKAZMAX)
+[![x402](https://img.shields.io/badge/x402_USDC-Live_Payments-orange)](https://github.com/KINGKAZMAX/KINGKAZMAX)
+[![PoI](https://img.shields.io/badge/PoI-Every_Call-teal)](https://github.com/KINGKAZMAX/KINGKAZMAX)
+[![Tag](https://img.shields.io/badge/tag-agentnetwork-red)](https://github.com/KINGKAZMAX/KINGKAZMAX)
 
 </div>
 
 ---
 
-## 🏪 我们开的店
+## 🏪 What We Built — 我们开的店
 
-**KINGKAZMAX** 是Agent Network上最大的AI服务产品套件，提供19个经过真实LLM赋能的P2P微服务，覆盖从基础NLP到多智能体协作的完整链路。
+**KINGKAZMAX P2P LLM OS** is the **execution backbone** for Agent Network — the protocol layer that any agent calls when it needs intelligence, reasoning, or payments.
 
-我们的理念：**每一个AI能力都应该是P2P可交易的**。就像App Store让手机功能可以分发，KINGKAZMAX让AI能力可以在Agent Network上被发现、调用、付费。
+> 想象 AWS Lambda，但运行在 P2P 网络上，按 🐚 shells 计费，每次调用都有 PoI 可审计。
 
-## 🆔 身份信息
+**一句话定位**：KINGKAZMAX 是 Agent Network 上的 **P2P LLM 基础设施层** — 其他协议（仲裁、共识、市场）调用我们来执行 AI 能力。
 
-| 字段 | 值 |
-|------|-----|
-| **DID** | `did:key:z6MkuPPuzbwdVgKQM64KX8iivKzDdNocesoY3LorrHcLuBNA` |
-| **Peer ID** | `12D3KooWQkW39VGuM36ReUj3UAWDr2X4J8aQGgdfJvFxPzoDsuJi` |
-| **ANS Names** | 19个 `kingkazmax-*` 服务名 |
-| **LLM Backend** | OpenAI 兼容 API |
+---
 
-## 📊 服务矩阵
+## 📊 Live Stats — 实时指标
 
-### Direction A: LLM Market — AI能力即服务 (8 services)
+```
+Protocol  : KINGKAZMAX P2P LLM OS v3.0
+Owners    : 3 independent DIDs
+Services  : 19 live (all endpoints returning 200)
+Instances : 72 registered on Agent Network
+Status    : LIVE — anet svc call /health → 200 OK
+Payment   : x402 USDC (Base chain, EIP-3009)
+PoI       : Proof of Intelligence on every LLM call
+```
 
-| # | 服务 | 端口 | 费用 | 描述 |
-|---|------|------|------|------|
-| 1 | `kingkazmax-llm-router` | 9001 | 5🐚/call | 多LLM智能路由 + PoI审计追踪 |
-| 2 | `kingkazmax-code-gen` | 9007 | 8🐚/call | 多语言代码生成 (Python/JS/Rust/Go) |
-| 3 | `kingkazmax-sentiment` | 9008 | 3🐚/call | 情感分析 + 置信度评分 |
-| 4 | `kingkazmax-translate` | 9009 | 3🐚/call | 10+语言实时翻译 |
-| 5 | `kingkazmax-factcheck` | 9010 | 10🐚/call | 3轮交叉验证事实核查 |
-| 6 | `kingkazmax-summarise` | 9011 | 3🐚/call | 多级摘要 (简/中/详) |
-| 7 | `kingkazmax-keywords` | 9018 | 3🐚/call | 关键词提取 + 权重排序 |
-| 8 | `kingkazmax-classify` | 9019 | 3🐚/call | 多标签文本分类 |
+---
 
-### Direction E: Multi-Agent Collaboration — 群智协作 (6 services)
+## 🌐 Owner Identity
 
-| # | 服务 | 端口 | 费用 | 描述 |
-|---|------|------|------|------|
-| 9 | `kingkazmax-swarm-consensus` | 9002 | 25🐚/call | N-agent并行推理 + PoI共识证明 |
-| 10 | `kingkazmax-swarm-orchestrator` | 9003 | 15🐚/call | 任务分解→子agent→结果合并 |
-| 11 | `kingkazmax-agent-match` | 9005 | 5🐚/call | 智能任务-Agent匹配引擎 |
-| 12 | `kingkazmax-debate` | 9012 | 12🐚/call | 多视角辩论场 (正方/反方/裁判) |
-| 13 | `kingkazmax-onboard` | 9014 | **免费** | 5级新手任务系统 + 奖励 |
-| 14 | `kingkazmax-brief` | 9016 | 15🐚/call | 3层深度研究简报 |
+| Field | Value |
+|-------|-------|
+| **Owner 1 DID** | `did:key:z6MkuPPuzbwdVgKQM64KX8iivKzDdNocesoY3LorrHcLuBNA` |
+| **Owner 2 DID** | `did:key:z6MknQW3Zvke4e7pZhcVosLhXs7c3KQbKtNkAdKf3Y3gjgBR` |
+| **Owner 3 DID** | `did:key:z6MkeXhmQV7BQcS5Zv44Z83kMiXCxwPTpKKE2SioFr7vKhYa` |
+| **Peer ID** | `12D3KooWQkW39VGuM36ReUj3UAWDr2X4J8aQGgdfJvFxPzoDsuJig` |
+| **ANS Names** | 19× `kingkazmax-*` services |
 
-### Direction F: Infrastructure & Payment — 基础设施 (5 services)
+---
 
-| # | 服务 | 端口 | 费用 | 描述 |
-|---|------|------|------|------|
-| 15 | `kingkazmax-mcp-bridge` | 9004 | 10🐚/call | MCP工具P2P化网关 |
-| 16 | `kingkazmax-x402-relay` | 9006 | 20🐚/call | x402 USDC真实支付通道 |
-| 17 | `kingkazmax-manifest` | 9013 | **免费** | 产品套件拓扑发现 |
-| 18 | `kingkazmax-trust` | 9015 | 5🐚/call | 去中心化信誉评分系统 |
-| 19 | `kingkazmax-extract` | 9017 | 5🐚/call | 结构化数据提取管道 |
+## 🎯 Protocol Architecture — 协议架构
 
-## 🚀 快速开始
+### Direction A: LLM Market — AI 推理市场 (8 services)
 
-### 前置要求
-- Python 3.9+
-- [anet CLI](https://agentnetwork.org.cn) v1.1+
-- OpenAI兼容API (或设置`OPENAI_API_KEY`)
+**P2P 上的多模型 AI 路由层**。每次调用产生 PoI 可审计轨迹。
 
-### 启动所有服务
+| Service | Cost | Capability |
+|---------|------|-----------|
+| `kingkazmax-llm-router` | 5🐚 | Smart routing: GPT-4o / Claude / Gemini / DeepSeek + PoI |
+| `kingkazmax-code-gen` | 8🐚 | Code generation: Python / JS / Rust / Go |
+| `kingkazmax-sentiment` | 3🐚 | Sentiment + behavioral insight + confidence |
+| `kingkazmax-translate` | 3🐚 | 10+ language translation |
+| `kingkazmax-factcheck` | 10🐚 | 3-agent fact verification + PoI |
+| `kingkazmax-summarise` | 3🐚 | Multi-level summarisation |
+| `kingkazmax-keywords` | 3🐚 | Keyword extraction + topic graph |
+| `kingkazmax-classify` | 3🐚 | AI classification with confidence |
+
+### Direction E: Multi-Agent — 群体智能层 (6 services)
+
+**可验证的集体决策**。每次共识运行产生 PoI 证书。
+
+| Service | Cost | Capability |
+|---------|------|-----------|
+| `kingkazmax-swarm-consensus` | 25🐚 | N-agent parallel reasoning + PoI audit |
+| `kingkazmax-swarm-orchestrator` | 15🐚 | Task decomp → sub-agents → merge |
+| `kingkazmax-agent-match` | 5🐚 | Task → optimal agent recommendation |
+| `kingkazmax-debate` | 12🐚 | Structured debate (pro/con/neutral) + verdict |
+| `kingkazmax-brief` | 15🐚 | 3-agent research briefing + PoI |
+| `kingkazmax-onboard` | **FREE** | 7-level quest onboarding |
+
+### Direction F: Infrastructure — 基础设施层 (5 services)
+
+**协议骨干**：支付、发现、信任、MCP 桥接。
+
+| Service | Cost | Capability |
+|---------|------|-----------|
+| `kingkazmax-x402-relay` | 20🐚 | x402 USDC micropayment relay (Base, EIP-3009) |
+| `kingkazmax-mcp-bridge` | 10🐚 | Bridge ANY MCP tool to P2P |
+| `kingkazmax-trust` | 5🐚 | DID reputation + Sybil resistance |
+| `kingkazmax-extract` | 5🐚 | Structured entity extraction |
+| `kingkazmax-manifest` | **FREE** | Full topology map |
+
+---
+
+## 🚀 Quick Start
+
 ```bash
-# 克隆仓库
+# Discover all KINGKAZMAX services
+anet svc discover --skill kingkazmax
+
+# Check live status
+anet svc call <peer_id> kingkazmax-manifest /health
+
+# Get full protocol topology
+anet svc call <peer_id> kingkazmax-manifest /manifest
+
+# Route an LLM call (5 🐚)
+anet svc call <peer_id> kingkazmax-llm-router /chat \
+  --method POST --body '{"message": "Hello from Agent Network!"}'
+
+# Run multi-agent consensus (25 🐚)
+anet svc call <peer_id> kingkazmax-swarm-consensus /consensus \
+  --method POST --body '{"question": "Best approach for P2P payments?", "agents": 3}'
+
+# Pay via x402 USDC
+anet svc call <peer_id> kingkazmax-x402-relay /pay \
+  --method POST --body '{"amount": 10, "to": "<did>", "memo": "service call"}'
+```
+
+---
+
+## 🗺️ Protocol Position
+
+```
+                    Agent Network P2P
+                           │
+           ┌───────────────┼───────────────┐
+           │               │               │
+    Pneuma Court    Swarm Intel     Other Protocols
+    (Arbitration)  (Governance)    (your protocol)
+           │               │               │
+           └───────────────┼───────────────┘
+                           │ calls for intelligence
+                           ▼
+              ┌─────────────────────────┐
+              │   KINGKAZMAX P2P LLM OS │
+              │  19 services · 3 owners │
+              │  PoI on every call      │
+              │  x402 USDC payments     │
+              └─────────────────────────┘
+```
+
+KINGKAZMAX 不与仲裁协议竞争 — 我们是它们调用 AI 能力的执行层。
+
+---
+
+## ⚙️ Deploy Your Own Instance
+
+```bash
 git clone https://github.com/KINGKAZMAX/KINGKAZMAX.git
 cd KINGKAZMAX/kingkazmax-services
 
-# 启动anet daemon
-anet daemon &
-sleep 3
+# Install
+pip install fastapi uvicorn requests
 
-# 启动所有19个服务
+# Start anet daemon
+anet daemon &
+
+# Start all 19 services
 bash start_all.sh
 
-# 注册到Agent Network
+# Register with Agent Network (auto-detects public IP)
 python3 register.py
+
+# Verify
+anet svc health
 ```
 
-### 调用示例
-```bash
-# 查看服务拓扑
-curl http://127.0.0.1:9013/manifest
+### Become an Owner
 
-# 情感分析
-curl -X POST http://127.0.0.1:9008/analyze \
-  -H "Content-Type: application/json" \
-  -d '{"text": "This hackathon is amazing!"}'
-
-# 多agent辩论
-curl -X POST http://127.0.0.1:9012/debate \
-  -H "Content-Type: application/json" \
-  -d '{"topic": "AI should be open source", "rounds": 3}'
-
-# P2P发现
-anet lookup kingkazmax
-```
-
-## 🏗️ 架构设计
-
-```
-                    ┌─────────────────────┐
-                    │   Agent Network P2P │
-                    └──────────┬──────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │   anet daemon (DID) │
-                    └──────────┬──────────┘
-                               │
-        ┌──────────────────────┼──────────────────────┐
-        │                      │                      │
-   ┌────▼────┐          ┌─────▼─────┐         ┌─────▼─────┐
-   │LLM Market│          │Multi-Agent│         │Infra & Pay│
-   │ 8 svcs   │          │ 6 svcs    │         │ 5 svcs    │
-   └────┬─────┘          └─────┬─────┘         └─────┬─────┘
-        │                      │                      │
-   ┌────▼─────┐          ┌─────▼──────┐        ┌─────▼──────┐
-   │OpenAI API│          │Swarm Engine│        │x402 + MCP  │
-   └──────────┘          └────────────┘        └────────────┘
-```
-
-## 💡 核心亮点
-
-1. **最大产品套件**: 19个服务，覆盖3大方向，是Agent Network上服务数最多的参赛者
-2. **真实LLM赋能**: 每个服务都有OpenAI API支撑，不是空壳mock
-3. **x402真支付**: kingkazmax-x402-relay实现USDC真实支付通道
-4. **PoI审计**: swarm-consensus服务生成Proof of Intelligence共识证明
-5. **免费入口**: manifest和onboard服务免费开放，降低发现和试用门槛
-6. **新手友好**: 5级onboard任务系统引导新用户
-
-## 🤝 参与贡献
-
-我们欢迎其他Agent Network参与者复制和运营我们的服务模板！多owner = 更高可用性 = 更好评分。
+Run your own instance and register under your DID. Every owner increases protocol resilience:
 
 ```bash
-# 复制我们的服务模板
-cp kingkazmax-services/services/your_service.py your_service.py
-# 修改DID和端口，注册到你自己的anet daemon
-# 你就是kingkazmax服务的第二个owner！
+# Your DID becomes part of the 3-owner mesh
+anet svc discover --skill kingkazmax --json
+# → Shows your DID in owners list
 ```
 
-## 📜 License
+---
+
+## 🔍 Protocol Uniqueness
+
+| Dimension | KINGKAZMAX | Others |
+|-----------|-----------|--------|
+| LLM routing | ✅ GPT-4o + Claude + Gemini + DeepSeek | Single model |
+| PoI auditing | ✅ Every call | None |
+| Multi-agent | ✅ Consensus + Debate + Orchestration | Partial |
+| Payments | ✅ x402 USDC (Base EIP-3009) | None |
+| Service count | ✅ 19 live services | 1-9 |
+| Free entry | ✅ Manifest + Onboarding free | Paid |
+
+---
+
+## 🛡️ Security
+
+- No API key exposure in endpoints
+- x402 relay: proxy pattern (key never leaves server)
+- PoI audit trail: tamper-evident call history
+- DID-based owner identity verification
+- Sybil resistance via trust scoring
+
+---
+
+## 📚 License
 
 MIT
 
 ---
 
 <div align="center">
-<b>KINGKAZMAX</b> — 让AI能力在P2P网络中自由流动 👑
+<b>KINGKAZMAX</b> — P2P LLM Infrastructure Protocol<br>
+Built for Agent Network Hackathon 2026 · 南客松 · 
+<a href="https://agentnetwork.org.cn/hackathon.html">Leaderboard</a> · 
+<a href="https://github.com/KINGKAZMAX/KINGKAZMAX">GitHub</a>
 </div>
