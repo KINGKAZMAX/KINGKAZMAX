@@ -55,7 +55,7 @@
 | [hci-rehab-robot-control](https://github.com/KINGKAZMAX/hci-rehab-robot-control) | Robotic real-time control application for rehabilitation purposes capable of interacting with remote clients (single robot version) | GitHub Fork · [AeroTechLab/RobotSystem-Lite](https://github.com/AeroTechLab/RobotSystem-Lite) |
 | [hci-robot-eyecam](https://github.com/KINGKAZMAX/hci-robot-eyecam) | This repository contains the main files of Eyecam | GitHub Fork · [marcteys/eyecam](https://github.com/marcteys/eyecam) |
 | [hci-robot-unitree-desktop](https://github.com/KINGKAZMAX/hci-robot-unitree-desktop) | Professional Robot Control Interface for Unitree G1 and GO2W Robots | GitHub Fork · [Airuxn/unitree-robot-control-suite](https://github.com/Airuxn/unitree-robot-control-suite) |
-| [hci-robot-unitree-g1-multimodal](https://github.com/KINGKAZMAX/hci-robot-unitree-g1-multimodal) | Unitree G1 控制应用资料与代码，包含视频、运动控制、手势和语音交互模块。 | GitHub Fork · [squirrelnuttz4u/unitreeG1](https://github.com/squirrelnuttz4u/unitreeG1) |
+| [hci-robot-unitree-g1-multimodal](https://github.com/KINGKAZMAX/hci-robot-unitree-g1-multimodal) | Unitree G1 控制应用代码与运行说明，保留上游来源。 | GitHub Fork · [squirrelnuttz4u/unitreeG1](https://github.com/squirrelnuttz4u/unitreeG1) |
 | [hci-robot-unitree-web](https://github.com/KINGKAZMAX/hci-robot-unitree-web) | A browser-based control interface for the Unitree Go2 / G1 / R1 | GitHub Fork · [legion1581/unitree_ui](https://github.com/legion1581/unitree_ui) |
 | [immersive-hci-evidence-governance](https://github.com/KINGKAZMAX/immersive-hci-evidence-governance) | Research-in-progress materials for an immersive HCI review: manuscript, frozen query, conceptual figure and document build script. | 账号内独立仓库；素材来源见仓库许可与署名 |
 | [kaggle_pokemon](https://github.com/KINGKAZMAX/kaggle_pokemon) | PTCG AI Battle Challenge：卡牌策略、搜索实验与复盘资料。 | GitHub Fork · [TomBombadyl/kaggle_pokemon](https://github.com/TomBombadyl/kaggle_pokemon) |
@@ -107,8 +107,8 @@
 | [CJY-Codex](https://github.com/KINGKAZMAX/CJY-Codex) | 陈俊烨 · AI 时代个人交互作品集：Vibe Coding、AI 教育系统、未来课堂与多模态实践。全链路从参赛者到主办方的成长轨迹。 | GitHub Fork · [1739467001-svg/CJY-Codex](https://github.com/1739467001-svg/CJY-Codex) |
 | [CJY-Web-Page](https://github.com/KINGKAZMAX/CJY-Web-Page) | CJY | GitHub Fork · [1739467001-svg/CJY-Web-Page](https://github.com/1739467001-svg/CJY-Web-Page) |
 | [cjy-web2](https://github.com/KINGKAZMAX/cjy-web2) | cjy-web个人主页展示2 | GitHub Fork · [1739467001-svg/cjy-web2](https://github.com/1739467001-svg/cjy-web2) |
-| [HK](https://github.com/KINGKAZMAX/HK) | AI Studio 应用文件与运行说明；具体作品用途尚待补充 | 账号内独立仓库；素材来源见仓库许可与署名 |
-| [KINGKAZMAX](https://github.com/KINGKAZMAX/KINGKAZMAX) | Bodies, spaces, cultural memory, playable media and human–AI relationships — a personal exploration and asset archive. | 账号内独立仓库；素材来源见仓库许可与署名 |
+| [HK](https://github.com/KINGKAZMAX/HK) | 用途待补充；保留为项目资产记录 | 账号内独立仓库；素材来源见仓库许可与署名 |
+| [KINGKAZMAX](https://github.com/KINGKAZMAX/KINGKAZMAX) | A curiosity lab exploring human–AI interaction, computational spaces and digital culture, with Agumon, PTCG, hackathons and playful research tools. | 账号内独立仓库；素材来源见仓库许可与署名 |
 | [kingkazmax-artist-archive](https://github.com/KINGKAZMAX/kingkazmax-artist-archive) | AI-assisted character art archive with generation prompts, bilingual dossiers and a local Canvas portrait remix studio. | 账号内独立仓库；素材来源见仓库许可与署名 |
 
 目录依据 2026-10-26 仓库快照整理。项目功能和维护状态以仓库的最新证据为准。
