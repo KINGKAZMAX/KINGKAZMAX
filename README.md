@@ -19,7 +19,7 @@ Here I share prototypes, design tools, and the processes behind them. I’m inte
 |:---|:---|:---|
 | **[贵傩戏 · Nuo Culture Digital Museum](https://github.com/KINGKAZMAX/nuo-culture-digital-museum)** | Point-cloud masks, gesture interaction, and browser-based AR. [Enter the museum ↗](https://kingkazmax.github.io/nuo-culture-digital-museum/) | Cultural experience · Three.js / MediaPipe |
 | **[Urban Co-Creation · Procedural Massing](https://github.com/KINGKAZMAX/DigitalFUTURES2026-UrbanCoCreation-Team4-ProceduralMassing)** | Signed-distance fields, four massing families, and versioned design studies. | DigitalFUTURES 2026 · Team 4 · Rhino / Python |
-| **[Immersive HCI · Evidence Governance](https://github.com/KINGKAZMAX/immersive-hci-evidence-governance)** | A review manuscript, frozen search specification, conceptual figure, and document-building code. | Manuscript & methods · Publication not claimed |
+| **[Immersive HCI · Evidence Governance](https://github.com/KINGKAZMAX/immersive-hci-evidence-governance)** | A review manuscript, frozen search specification, conceptual figure, and document-building code. | Research in progress · Manuscript & methods |
 | **[AdventuregameX](https://github.com/KINGKAZMAX/AdventuregameX)** | A hub for a tactile 3D Game Boy experience and a virtual-pet toy. | Web experience prototype · Third-party components credited in the repository |
 | **[Artist Archive](https://github.com/KINGKAZMAX/kingkazmax-artist-archive)** | AI-assisted character studies, documented prompts, and a browser-based remix interface. | Creative process archive · Canvas remix |
 | **[DesignVault-Z](https://github.com/KINGKAZMAX/DesignVault-Z)** | A searchable, curated index of design resources. | Resource curation · Sources belong to their respective creators |
@@ -30,7 +30,7 @@ Here I share prototypes, design tools, and the processes behind them. I’m inte
 - **Space × computation** — How can a parametric study make design alternatives easier to compare and discuss?
 - **AI × creative practice** — How can AI-assisted workflows preserve the reasoning, attribution, and decisions behind a prototype?
 
-These are directions for exploration. The repositories document prototypes and methods; they are not claims of validated research outcomes.
+Ongoing questions, explored through prototypes, methods, and documented iterations.
 
 <details>
 <summary><b>Process, experiments & collaboration</b></summary>
