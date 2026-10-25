@@ -30,4 +30,3 @@ The GIF can be embedded as an ordinary Markdown image and linked to the interact
 - Structural validation: 57 occupied required cells, 15 transparent unused cells; the bundled `validate_atlas.py` passes with no errors or warnings on the exact derived WebP.
 - The original local pet configuration and sprite file were not changed. No desktop pet was selected or replaced by this conversion. The derived files are published with this personal website.
 
-该资源来自用户选择的既有本地亚古兽宠物。本次仅做技术转换与现有帧的动图编排，不把角色宣称为原创，也不暗示官方关系。

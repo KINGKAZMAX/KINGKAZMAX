@@ -1,22 +1,23 @@
-# 个人实验室维护
+# Profile Maintenance
 
-主页内容以研究问题、博士探索方向、亚古兽及可玩工具为中心。不要把它改回项目陈列。
+Keep the public profile centered on research questions, directions toward doctoral study, Agumon and interactive tools. The public-facing interface and documentation are in English.
 
-- `README.md`：GitHub 可播放动图和跳转入口，不运行 JavaScript。
-- `docs/index.html` / `style.css` / `app.js`：互动主页。
-- `docs/assets/pet/`：既有本地亚古兽的网页派生副本，按 manifest 的逐帧时长播放；原宠物文件不随主页更新。
-- `docs/public-assets.json` / `ASSETS.md`：只含公开仓库。私有清单保存在本地 Obsidian 和审计目录。
-- `docs/assets.html`：独立资产抽屉，不能把账号管理混同于全部原创。
-- `scripts/generate_lab_widgets.py` 在本地工作区生成 README 图像组件。
+- `README.md` is the GitHub profile entry point. It can display images and GIFs, but cannot run custom JavaScript.
+- `docs/index.html`, `style.css` and `app.js` provide the interactive site.
+- `docs/assets/pet/` contains web derivatives of the existing local Agumon pet. The animation manifest preserves individual frame timings. Updating the site does not alter the local original.
+- `docs/public-assets.json` and `ASSETS.md` contain public repositories only. The private inventory remains in the local Obsidian vault and audit folder.
+- `docs/assets.html` is a separate, searchable public directory. Account management does not imply sole authorship.
+- `scripts/generate_lab_widgets.py` creates the profile's original SVG entry cards.
+- `scripts/translate_public_assets_en.py` maintains English directory descriptions while retaining repository links, Fork status and provenance fields.
 
-## 如何更新自述
+## Updating the profile
 
-修改博士方向或经历时，更新 README 和双语页面文案。具体赛事、名次、学校、导师或录取状态仅在本人确认后填写。新增探索议题要标明是问题或候选方向。
+When research directions or personal experience change, revise both the README and the live site. Add specific events, placements, universities, supervisors or admission outcomes only after they have been confirmed. Label new research intersections as questions or proposed directions, not completed findings.
 
-## 如何验证
+## Checking a change
 
-检查中文和英文、深浅主题、减少动态、pet四按钮、研究切换、六个小工具、手机320px与390px、禁用脚本后的基础内容，以及资产目录数量。计时器以截止时间计算，刷新页面会重置；便签只在访客本地浏览器保存。
+Check both themes, reduced motion, all four pet actions, research selection, six interactive tools, 320px and 390px layouts, the no-JavaScript fallback and the public asset count. The focus timer uses a deadline and resets on page reload; the visitor's note stays in their own browser.
 
-## 回溯
+## Reverting
 
-源码变更通过新提交回退。Bio、Topics、置顶等GitHub资料设置另看本地审计快照。不要将凭据或私有清单提交到公开仓库。
+Revert source changes through Git commits. GitHub Bio, Topics and pinned repositories are separate account settings; consult the local audit snapshot for those. Do not publish credentials or the private repository inventory.

@@ -5,14 +5,14 @@
     {
       "name": "-",
       "url": "https://github.com/KINGKAZMAX/-",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "用途待补充；保留为项目资产记录",
+      "description": "Needs documentation; retained as a repository record.",
       "aliases": [
         "-",
         "KINGKAZMAX/-"
@@ -24,7 +24,7 @@
     {
       "name": "AdventuregameX",
       "url": "https://github.com/KINGKAZMAX/AdventuregameX",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -54,14 +54,14 @@
     {
       "name": "ai-hackathon-showcase",
       "url": "https://github.com/KINGKAZMAX/ai-hackathon-showcase",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/ai-hackathon-showcase",
       "upstream_url": "https://github.com/1739467001-svg/ai-hackathon-showcase",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "浙江工商大学信电学院·人工智能学院首届AI黑客松大赛 作品展示集 | An editorial showcase of the 1st AI Hackathon at ZJGSU",
+      "description": "Editorial showcase for the first AI Hackathon at ZJGSU.",
       "aliases": [
         "ai-hackathon-showcase",
         "KINGKAZMAX/ai-hackathon-showcase",
@@ -75,14 +75,14 @@
     {
       "name": "ai-hr-lecture",
       "url": "https://github.com/KINGKAZMAX/ai-hr-lecture",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/ai-hr-lecture",
       "upstream_url": "https://github.com/1739467001-svg/ai-hr-lecture",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "浙江工商大学信电人工智能学院为浙江医药集团HR团队打造的AI培训专题网站，包含双讲师介绍、完整课程体系与扣子平台实操设计 · 使用 Manus 构建",
+      "description": "AI training site for a corporate HR team, with instructor profiles, course structure and Coze practice; the upstream description notes a Manus build.",
       "aliases": [
         "ai-hr-lecture",
         "KINGKAZMAX/ai-hr-lecture",
@@ -95,7 +95,7 @@
     {
       "name": "airi",
       "url": "https://github.com/KINGKAZMAX/airi",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": true,
       "upstream_repository": "moeru-ai/airi",
       "upstream_url": "https://github.com/moeru-ai/airi",
@@ -121,7 +121,7 @@
     {
       "name": "alma-globe",
       "url": "https://github.com/KINGKAZMAX/alma-globe",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -132,7 +132,7 @@
         "sqlite",
         "threejs"
       ],
-      "description": "ALMA · 母校星球 — 在 three.js 地球上点亮你的每一所学校，连接全球校友 | Light up your schools on a three.js Earth",
+      "description": "ALMA: a Three.js globe connecting schools and alumni across locations.",
       "aliases": [
         "alma-globe",
         "KINGKAZMAX/alma-globe",
@@ -145,14 +145,14 @@
     {
       "name": "animal-intelligence-study",
       "url": "https://github.com/KINGKAZMAX/animal-intelligence-study",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "1739467001-svg/animal-intelligence-study",
       "upstream_url": "https://github.com/1739467001-svg/animal-intelligence-study",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "研究生课程—— 一站式 《动物智能IAM》学习与备考网站",
+      "description": "Study and examination-preparation site for a graduate course in animal intelligence.",
       "aliases": [
         "animal-intelligence-study",
         "KINGKAZMAX/animal-intelligence-study",
@@ -165,7 +165,7 @@
     {
       "name": "animal-intelligence-study2",
       "url": "https://github.com/KINGKAZMAX/animal-intelligence-study2",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "1739467001-svg/animal-intelligence-study2",
       "upstream_url": "https://github.com/1739467001-svg/animal-intelligence-study2",
@@ -185,7 +185,7 @@
     {
       "name": "ARTEX",
       "url": "https://github.com/KINGKAZMAX/ARTEX",
-      "category": "工具与资源",
+      "category": "Tools and resources",
       "fork": true,
       "upstream_repository": "mhtsec/ARTEX",
       "upstream_url": "https://github.com/mhtsec/ARTEX",
@@ -194,7 +194,7 @@
       ],
       "github_license_spdx": "AGPL-3.0",
       "topics": [],
-      "description": "AI 自主渗透测试系统 | 百度“agent+”攻防挑战赛冠军项目",
+      "description": "AI-assisted penetration-testing system; see the upstream repository for its origin and competition claims.",
       "aliases": [
         "ARTEX",
         "KINGKAZMAX/ARTEX",
@@ -207,7 +207,7 @@
     {
       "name": "Campus-Twin",
       "url": "https://github.com/KINGKAZMAX/Campus-Twin",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": true,
       "upstream_repository": "1739467001-svg/Campus-Twin",
       "upstream_url": "https://github.com/1739467001-svg/Campus-Twin",
@@ -216,7 +216,7 @@
       "topics": [
         "threejs"
       ],
-      "description": "CampusTwin 校园数字孪生服务台",
+      "description": "CampusTwin digital-twin service desk for a campus setting.",
       "aliases": [
         "Campus-Twin",
         "KINGKAZMAX/Campus-Twin",
@@ -230,14 +230,14 @@
     {
       "name": "chinese-independent-developer",
       "url": "https://github.com/KINGKAZMAX/chinese-independent-developer",
-      "category": "工具与资源",
+      "category": "Tools and resources",
       "fork": true,
       "upstream_repository": "1c7/chinese-independent-developer",
       "upstream_url": "https://github.com/1c7/chinese-independent-developer",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
+      "description": "Community list of independent developers in China and the projects they share.",
       "aliases": [
         "chinese-independent-developer",
         "KINGKAZMAX/chinese-independent-developer",
@@ -250,14 +250,14 @@
     {
       "name": "CJY",
       "url": "https://github.com/KINGKAZMAX/CJY",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": true,
       "upstream_repository": "1739467001-svg/CJY7",
       "upstream_url": "https://github.com/1739467001-svg/CJY7",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "个人介绍与作品集",
+      "description": "Personal introduction and portfolio; see the repository for authorship.",
       "aliases": [
         "CJY",
         "KINGKAZMAX/CJY",
@@ -272,14 +272,14 @@
     {
       "name": "cjy-2",
       "url": "https://github.com/KINGKAZMAX/cjy-2",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": true,
       "upstream_repository": "1739467001-svg/cjy-2",
       "upstream_url": "https://github.com/1739467001-svg/cjy-2",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "CJY个人介绍",
+      "description": "Personal introduction for CJY; see the repository for authorship.",
       "aliases": [
         "cjy-2",
         "KINGKAZMAX/cjy-2",
@@ -293,14 +293,14 @@
     {
       "name": "CJY-Codex",
       "url": "https://github.com/KINGKAZMAX/CJY-Codex",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": true,
       "upstream_repository": "1739467001-svg/CJY-Codex",
       "upstream_url": "https://github.com/1739467001-svg/CJY-Codex",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "陈俊烨 · AI 时代个人交互作品集：Vibe Coding、AI 教育系统、未来课堂与多模态实践。全链路从参赛者到主办方的成长轨迹。",
+      "description": "Interactive portfolio covering AI education systems, future classrooms and multimodal practice; see the repository for authorship.",
       "aliases": [
         "CJY-Codex",
         "KINGKAZMAX/CJY-Codex",
@@ -313,14 +313,14 @@
     {
       "name": "CJY-Web-Page",
       "url": "https://github.com/KINGKAZMAX/CJY-Web-Page",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": true,
       "upstream_repository": "1739467001-svg/CJY-Web-Page",
       "upstream_url": "https://github.com/1739467001-svg/CJY-Web-Page",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "CJY",
+      "description": "CJY personal page; see the repository for authorship.",
       "aliases": [
         "CJY-Web-Page",
         "KINGKAZMAX/CJY-Web-Page",
@@ -334,14 +334,14 @@
     {
       "name": "cjy-web2",
       "url": "https://github.com/KINGKAZMAX/cjy-web2",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": true,
       "upstream_repository": "1739467001-svg/cjy-web2",
       "upstream_url": "https://github.com/1739467001-svg/cjy-web2",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "cjy-web个人主页展示2",
+      "description": "Second iteration of a CJY personal page; see the repository for authorship.",
       "aliases": [
         "cjy-web2",
         "KINGKAZMAX/cjy-web2",
@@ -355,7 +355,7 @@
     {
       "name": "claude-code-source-code",
       "url": "https://github.com/KINGKAZMAX/claude-code-source-code",
-      "category": "工具与资源",
+      "category": "Tools and resources",
       "fork": true,
       "upstream_repository": "sanbuphy/learn-coding-agent",
       "upstream_url": "https://github.com/sanbuphy/learn-coding-agent",
@@ -377,7 +377,7 @@
     {
       "name": "deepblue-rig",
       "url": "https://github.com/KINGKAZMAX/deepblue-rig",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": true,
       "upstream_repository": "1739467001-svg/deepblue-rig",
       "upstream_url": "https://github.com/1739467001-svg/deepblue-rig",
@@ -387,7 +387,7 @@
         "react",
         "threejs"
       ],
-      "description": "DeepBlue Rig · 海上油田数字孪生视觉模拟 — 用游戏级渲染技术构建一座\"活着的\"海上油田。Web 端 React + Three.js (R3F) 实时 3D:Gerstner 海洋、昼夜循环、七种天气、火炬燃烧、FPSO/油轮/直升机、电影运镜与状态驱动的孪生预留架构。",
+      "description": "Offshore oil-rig digital-twin visual simulation using React and Three.js, with ocean, weather and vessel scenes described upstream.",
       "aliases": [
         "deepblue-rig",
         "KINGKAZMAX/deepblue-rig",
@@ -401,7 +401,7 @@
     {
       "name": "DesignVault-Z",
       "url": "https://github.com/KINGKAZMAX/DesignVault-Z",
-      "category": "工具与资源",
+      "category": "Tools and resources",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -433,7 +433,7 @@
     {
       "name": "DigitalFUTURES2026-UrbanCoCreation-Team4-ProceduralMassing",
       "url": "https://github.com/KINGKAZMAX/DigitalFUTURES2026-UrbanCoCreation-Team4-ProceduralMassing",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -460,7 +460,7 @@
     {
       "name": "EPIC-Hackathon-Singapore",
       "url": "https://github.com/KINGKAZMAX/EPIC-Hackathon-Singapore",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -479,7 +479,7 @@
     {
       "name": "Flame-Blessing",
       "url": "https://github.com/KINGKAZMAX/Flame-Blessing",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -490,7 +490,7 @@
         "threejs",
         "websocket"
       ],
-      "description": "文字火焰：以 Three.js、WebSocket 和 SQLite 实现祝福文字展示与观众互动。",
+      "description": "Interactive display for written wishes using Three.js, WebSocket and SQLite.",
       "aliases": [
         "Flame-Blessing",
         "KINGKAZMAX/Flame-Blessing",
@@ -503,14 +503,14 @@
     {
       "name": "Focus-on-the-kitchen",
       "url": "https://github.com/KINGKAZMAX/Focus-on-the-kitchen",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/Focus-on-the-kitchen",
       "upstream_url": "https://github.com/1739467001-svg/Focus-on-the-kitchen",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "专注厨房，带小孩打比赛",
+      "description": "Kitchen-themed competition material; see the upstream repository for context.",
       "aliases": [
         "Focus-on-the-kitchen",
         "KINGKAZMAX/Focus-on-the-kitchen",
@@ -523,7 +523,7 @@
     {
       "name": "funskills-starlight",
       "url": "https://github.com/KINGKAZMAX/funskills-starlight",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/funskills-starlight",
       "upstream_url": "https://github.com/1739467001-svg/funskills-starlight",
@@ -532,7 +532,7 @@
       "topics": [
         "canvas"
       ],
-      "description": "FunSkills 决赛作品展示页：星空视觉、作品轮播与赛道筛选。",
+      "description": "Finalist showcase with a starfield presentation, project carousel and track filter.",
       "aliases": [
         "funskills-starlight",
         "KINGKAZMAX/funskills-starlight",
@@ -546,7 +546,7 @@
     {
       "name": "game-boy-challenge",
       "url": "https://github.com/KINGKAZMAX/game-boy-challenge",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": true,
       "upstream_repository": "Snokke/game-boy-challenge",
       "upstream_url": "https://github.com/Snokke/game-boy-challenge",
@@ -571,7 +571,7 @@
     {
       "name": "GamePlan4Life",
       "url": "https://github.com/KINGKAZMAX/GamePlan4Life",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "eternity4719/HowToLiveBetter",
       "upstream_url": "https://github.com/eternity4719/HowToLiveBetter",
@@ -587,7 +587,7 @@
         "personal-finance",
         "self-improvement"
       ],
-      "description": "《人生通关手册》：按性价比排序的循证人生攻略，53 节 916 条——长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业合规、出国与技能、体检保险、吃饭运动、婚姻经营、老年与死亡准备。每条写明成本、收益、证据等级和原始出处。",
+      "description": "Evidence-oriented practical-life guide organized around costs, benefits and cited sources; see the upstream project for its claims.",
       "aliases": [
         "GamePlan4Life",
         "KINGKAZMAX/GamePlan4Life",
@@ -602,7 +602,7 @@
     {
       "name": "hackathon-for-agentic-payment2.0",
       "url": "https://github.com/KINGKAZMAX/hackathon-for-agentic-payment2.0",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/hackathon-for-agentic-payment2.0",
       "upstream_url": "https://github.com/1739467001-svg/hackathon-for-agentic-payment2.0",
@@ -611,7 +611,7 @@
       "topics": [
         "react"
       ],
-      "description": " Monad Blitz 黑客松：AI 都能自己干活了，但它怎么赚钱 / 花钱？hackathon for agentic-payment2.0",
+      "description": "Monad Blitz hackathon material exploring payments for autonomous AI agents.",
       "aliases": [
         "hackathon-for-agentic-payment2.0",
         "KINGKAZMAX/hackathon-for-agentic-payment2.0",
@@ -627,7 +627,7 @@
     {
       "name": "HackathoN-IN-HackathoN",
       "url": "https://github.com/KINGKAZMAX/HackathoN-IN-HackathoN",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -646,14 +646,14 @@
     {
       "name": "hackathon-poster",
       "url": "https://github.com/KINGKAZMAX/hackathon-poster",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/hackathon-poster",
       "upstream_url": "https://github.com/1739467001-svg/hackathon-poster",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "2050去探索AI行知百城千县行动计划黑客松海报生成器，左侧实时预览海报，右侧控制面板支持图片上传、文字填写、图片缩放平移调整，最终下载填写完成的PDF · 使用 Manus 构建",
+      "description": "Hackathon poster generator with live preview, image controls, text entry and PDF export; the upstream description notes a Manus build.",
       "aliases": [
         "hackathon-poster",
         "KINGKAZMAX/hackathon-poster",
@@ -666,7 +666,7 @@
     {
       "name": "hci-rehab-gait-dashboard",
       "url": "https://github.com/KINGKAZMAX/hci-rehab-gait-dashboard",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "utkukose/mogait",
       "upstream_url": "https://github.com/utkukose/mogait",
@@ -690,7 +690,7 @@
     {
       "name": "hci-rehab-robot-control",
       "url": "https://github.com/KINGKAZMAX/hci-rehab-robot-control",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "AeroTechLab/RobotSystem-Lite",
       "upstream_url": "https://github.com/AeroTechLab/RobotSystem-Lite",
@@ -713,7 +713,7 @@
     {
       "name": "hci-robot-eyecam",
       "url": "https://github.com/KINGKAZMAX/hci-robot-eyecam",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "marcteys/eyecam",
       "upstream_url": "https://github.com/marcteys/eyecam",
@@ -737,7 +737,7 @@
     {
       "name": "hci-robot-unitree-desktop",
       "url": "https://github.com/KINGKAZMAX/hci-robot-unitree-desktop",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "Airuxn/unitree-robot-control-suite",
       "upstream_url": "https://github.com/Airuxn/unitree-robot-control-suite",
@@ -761,7 +761,7 @@
     {
       "name": "hci-robot-unitree-g1-multimodal",
       "url": "https://github.com/KINGKAZMAX/hci-robot-unitree-g1-multimodal",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "squirrelnuttz4u/unitreeG1",
       "upstream_url": "https://github.com/squirrelnuttz4u/unitreeG1",
@@ -770,7 +770,7 @@
       ],
       "github_license_spdx": "NOASSERTION",
       "topics": [],
-      "description": "Unitree G1 控制应用代码与运行说明，保留上游来源。",
+      "description": "Unitree G1 control-application code and run instructions, with upstream provenance retained.",
       "aliases": [
         "hci-robot-unitree-g1-multimodal",
         "KINGKAZMAX/hci-robot-unitree-g1-multimodal",
@@ -785,7 +785,7 @@
     {
       "name": "hci-robot-unitree-web",
       "url": "https://github.com/KINGKAZMAX/hci-robot-unitree-web",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "legion1581/unitree_ui",
       "upstream_url": "https://github.com/legion1581/unitree_ui",
@@ -811,14 +811,14 @@
     {
       "name": "HK",
       "url": "https://github.com/KINGKAZMAX/HK",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "用途待补充；保留为项目资产记录",
+      "description": "Needs documentation; retained as a repository record.",
       "aliases": [
         "HK",
         "KINGKAZMAX/HK",
@@ -831,7 +831,7 @@
     {
       "name": "immersive-hci-evidence-governance",
       "url": "https://github.com/KINGKAZMAX/immersive-hci-evidence-governance",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -860,14 +860,14 @@
     {
       "name": "kaggle_pokemon",
       "url": "https://github.com/KINGKAZMAX/kaggle_pokemon",
-      "category": "研究材料与交互系统",
+      "category": "Research materials and interactive systems",
       "fork": true,
       "upstream_repository": "TomBombadyl/kaggle_pokemon",
       "upstream_url": "https://github.com/TomBombadyl/kaggle_pokemon",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "PTCG AI Battle Challenge：卡牌策略、搜索实验与复盘资料。",
+      "description": "PTCG AI Battle Challenge material: card strategy, search experiments and review notes.",
       "aliases": [
         "kaggle_pokemon",
         "KINGKAZMAX/kaggle_pokemon",
@@ -881,7 +881,7 @@
     {
       "name": "KINGKAZMAX",
       "url": "https://github.com/KINGKAZMAX/KINGKAZMAX",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -912,7 +912,7 @@
     {
       "name": "kingkazmax-artist-archive",
       "url": "https://github.com/KINGKAZMAX/kingkazmax-artist-archive",
-      "category": "个人与作品档案",
+      "category": "Personal and practice archives",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -940,14 +940,14 @@
     {
       "name": "kneeup-3d-preview",
       "url": "https://github.com/KINGKAZMAX/kneeup-3d-preview",
-      "category": "健康与公共服务原型",
+      "category": "Health and public-service prototypes",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "用途待补充；保留为项目资产记录",
+      "description": "Needs documentation; retained as a repository record.",
       "aliases": [
         "kneeup-3d-preview",
         "KINGKAZMAX/kneeup-3d-preview"
@@ -959,7 +959,7 @@
     {
       "name": "kneeup-aix-origin-2026-vital",
       "url": "https://github.com/KINGKAZMAX/kneeup-aix-origin-2026-vital",
-      "category": "健康与公共服务原型",
+      "category": "Health and public-service prototypes",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -971,7 +971,7 @@
         "mediapipe",
         "threejs"
       ],
-      "description": "Kneeup 膝望 · AI knee-rehab companion (Soft Healthcare) — AIx Origin Summit 2026 · Vital 活域赛道 · Hong Kong Cyberport",
+      "description": "KneeUp AI knee-rehabilitation companion prototype associated with the AIx Origin Summit 2026 Vital track.",
       "aliases": [
         "kneeup-aix-origin-2026-vital",
         "KINGKAZMAX/kneeup-aix-origin-2026-vital",
@@ -984,7 +984,7 @@
     {
       "name": "kneeup-web",
       "url": "https://github.com/KINGKAZMAX/kneeup-web",
-      "category": "健康与公共服务原型",
+      "category": "Health and public-service prototypes",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -993,7 +993,7 @@
       "topics": [
         "mediapipe"
       ],
-      "description": "KneeUp 膝望整合演示站：设计过程、3D 预览、应用演示与端侧姿态交互。",
+      "description": "KneeUp demonstration site for design process, 3D preview, app demo and on-device pose interaction.",
       "aliases": [
         "kneeup-web",
         "KINGKAZMAX/kneeup-web",
@@ -1006,14 +1006,14 @@
     {
       "name": "Kowloon-Walled-City",
       "url": "https://github.com/KINGKAZMAX/Kowloon-Walled-City",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "用途待补充；保留为项目资产记录",
+      "description": "Needs documentation; retained as a repository record.",
       "aliases": [
         "Kowloon-Walled-City",
         "KINGKAZMAX/Kowloon-Walled-City"
@@ -1025,7 +1025,7 @@
     {
       "name": "meniscus-shield-demo",
       "url": "https://github.com/KINGKAZMAX/meniscus-shield-demo",
-      "category": "健康与公共服务原型",
+      "category": "Health and public-service prototypes",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1034,7 +1034,7 @@
       "topics": [
         "mediapipe"
       ],
-      "description": "MENISCUS SHIELD 团队网页原型：端侧膝部姿态反馈与明确标注的模拟传感通道。",
+      "description": "Team web prototype for on-device knee-pose feedback, with a clearly marked simulated sensor channel.",
       "aliases": [
         "meniscus-shield-demo",
         "KINGKAZMAX/meniscus-shield-demo",
@@ -1047,14 +1047,14 @@
     {
       "name": "Mewo",
       "url": "https://github.com/KINGKAZMAX/Mewo",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "桌面喵喵",
+      "description": "Desktop cat companion; see the repository for implementation details.",
       "aliases": [
         "Mewo",
         "KINGKAZMAX/Mewo"
@@ -1066,7 +1066,7 @@
     {
       "name": "nuo-culture-digital-museum",
       "url": "https://github.com/KINGKAZMAX/nuo-culture-digital-museum",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1102,7 +1102,7 @@
     {
       "name": "oc-world-app",
       "url": "https://github.com/KINGKAZMAX/oc-world-app",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": true,
       "upstream_repository": "1739467001-svg/oc-world-app",
       "upstream_url": "https://github.com/1739467001-svg/oc-world-app",
@@ -1112,7 +1112,7 @@
         "react",
         "sqlite"
       ],
-      "description": "OC World 角色创作与互动社区原型资料。",
+      "description": "OC World character-creation and interaction-community prototype materials.",
       "aliases": [
         "oc-world-app",
         "KINGKAZMAX/oc-world-app",
@@ -1126,7 +1126,7 @@
     {
       "name": "OCWORLD",
       "url": "https://github.com/KINGKAZMAX/OCWORLD",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": true,
       "upstream_repository": "bescriptkiddie/oc_world",
       "upstream_url": "https://github.com/bescriptkiddie/oc_world",
@@ -1151,7 +1151,7 @@
     {
       "name": "OCWORLD-X",
       "url": "https://github.com/KINGKAZMAX/OCWORLD-X",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1161,7 +1161,7 @@
         "electron",
         "react"
       ],
-      "description": "OC World 桌面应用原型：角色对话、记忆、感知与 Agent 世界的交互探索。",
+      "description": "Desktop OC World application prototype exploring character dialogue, memory, perception and agent worlds.",
       "aliases": [
         "OCWORLD-X",
         "KINGKAZMAX/OCWORLD-X",
@@ -1175,14 +1175,14 @@
     {
       "name": "old-erzh-gaoxin-enrollment",
       "url": "https://github.com/KINGKAZMAX/old-erzh-gaoxin-enrollment",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/erzh-gaoxin-enrollment",
       "upstream_url": "https://github.com/1739467001-svg/erzh-gaoxin-enrollment",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "杭州二中",
+      "description": "Material associated with Hangzhou No. 2 High School; see the upstream repository for context.",
       "aliases": [
         "old-erzh-gaoxin-enrollment",
         "KINGKAZMAX/old-erzh-gaoxin-enrollment",
@@ -1196,7 +1196,7 @@
     {
       "name": "openclaw_tutorial2",
       "url": "https://github.com/KINGKAZMAX/openclaw_tutorial2",
-      "category": "工具与资源",
+      "category": "Tools and resources",
       "fork": true,
       "upstream_repository": "1739467001-svg/openclaw_tutorial",
       "upstream_url": "https://github.com/1739467001-svg/openclaw_tutorial",
@@ -1217,7 +1217,7 @@
     {
       "name": "playtime-atlas-20261021",
       "url": "https://github.com/KINGKAZMAX/playtime-atlas-20261021",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1226,7 +1226,7 @@
       ],
       "github_license_spdx": null,
       "topics": [],
-      "description": "回响电玩馆 · 作品总廊 — 本批 MiniMax M3.1 Flash 关联作品、年代可玩展厅与来源档案的统一在线入口（静态站点，GitHub Pages）",
+      "description": "Static online gallery connecting playable retro-inspired rooms and provenance records for related projects.",
       "aliases": [
         "playtime-atlas-20261021",
         "KINGKAZMAX/playtime-atlas-20261021",
@@ -1241,7 +1241,7 @@
     {
       "name": "PriceAI",
       "url": "https://github.com/KINGKAZMAX/PriceAI",
-      "category": "工具与资源",
+      "category": "Tools and resources",
       "fork": true,
       "upstream_repository": "dimthink/PriceAI",
       "upstream_url": "https://github.com/dimthink/PriceAI",
@@ -1250,7 +1250,7 @@
       ],
       "github_license_spdx": "NOASSERTION",
       "topics": [],
-      "description": "AI 订阅卡网渠道比价工具：聚合100+卡网渠道包含 ChatGPT、Claude、Gemini、Grok 等多渠道报价，展示有货最低价、库存状态和原站购买链接。",
+      "description": "Price comparison tool aggregating subscription-card marketplace listings and linking to original sellers.",
       "aliases": [
         "PriceAI",
         "KINGKAZMAX/PriceAI",
@@ -1263,14 +1263,14 @@
     {
       "name": "red-hackathon-s1",
       "url": "https://github.com/KINGKAZMAX/red-hackathon-s1",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/red-hackathon-s1",
       "upstream_url": "https://github.com/1739467001-svg/red-hackathon-s1",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "黑客松中的黑客松",
+      "description": "Hackathon-within-a-hackathon material; see the upstream repository for context.",
       "aliases": [
         "red-hackathon-s1",
         "KINGKAZMAX/red-hackathon-s1",
@@ -1284,14 +1284,14 @@
     {
       "name": "SmartContainer-3D",
       "url": "https://github.com/KINGKAZMAX/SmartContainer-3D",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": true,
       "upstream_repository": "1739467001-svg/SmartContainer-3D",
       "upstream_url": "https://github.com/1739467001-svg/SmartContainer-3D",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "这是一个可视化的3D集装箱装载规划工具，它支持导入CSV货物清单，结合智能自动堆叠算法与自由手动微调（支持防碰撞与吸附），实时计算重心位置与空间利用率，并能一键导出包含详细作业指令的专业PDF装箱方案。",
+      "description": "Visual 3D container-loading planner with CSV import, automatic and manual placement, center-of-gravity calculations and PDF export.",
       "aliases": [
         "SmartContainer-3D",
         "KINGKAZMAX/SmartContainer-3D",
@@ -1305,7 +1305,7 @@
     {
       "name": "those-who-fight-reality",
       "url": "https://github.com/KINGKAZMAX/those-who-fight-reality",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1314,7 +1314,7 @@
       ],
       "github_license_spdx": "GPL-3.0",
       "topics": [],
-      "description": "與名為現實的怪物戰鬥的人們 | THOSE WHO FIGHT THE MONSTER CALLED REALITY — 同屏合作格鬥遊戲",
+      "description": "Those Who Fight the Monster Called Reality: same-screen cooperative fighting game.",
       "aliases": [
         "those-who-fight-reality",
         "KINGKAZMAX/those-who-fight-reality",
@@ -1327,14 +1327,14 @@
     {
       "name": "travel-meow-adventure",
       "url": "https://github.com/KINGKAZMAX/travel-meow-adventure",
-      "category": "可玩媒介与叙事",
+      "category": "Playful media and narrative",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "旅行喵喵冒险记：公开试玩页面",
+      "description": "Public playable preview for a cat-adventure project.",
       "aliases": [
         "travel-meow-adventure",
         "KINGKAZMAX/travel-meow-adventure"
@@ -1346,7 +1346,7 @@
     {
       "name": "typhoon-rescue-system",
       "url": "https://github.com/KINGKAZMAX/typhoon-rescue-system",
-      "category": "健康与公共服务原型",
+      "category": "Health and public-service prototypes",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1355,7 +1355,7 @@
       "topics": [
         "react"
       ],
-      "description": "广西台风救援信息平台：台风预报·救援电话·求助互助·灾后重建安全指南（移动端优先，参考香港大埔救援系统）",
+      "description": "Mobile-first typhoon information and rescue-support prototype covering forecasts, help contacts and recovery guidance.",
       "aliases": [
         "typhoon-rescue-system",
         "KINGKAZMAX/typhoon-rescue-system",
@@ -1368,7 +1368,7 @@
     {
       "name": "unbuilt-city",
       "url": "https://github.com/KINGKAZMAX/unbuilt-city",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1379,7 +1379,7 @@
       "topics": [
         "threejs"
       ],
-      "description": "未建之城 Unbuilt Atlas — 蔡智鑫的可玩建筑实验。CC0 模型（Gobkit/Kenney），基于 Overdrive City (MIT)。",
+      "description": "Unbuilt Atlas: a playable architecture experiment using attributed CC0 models and an MIT-licensed base project; see repository notices.",
       "aliases": [
         "unbuilt-city",
         "KINGKAZMAX/unbuilt-city",
@@ -1394,7 +1394,7 @@
     {
       "name": "unesco-virtual-museum-replica",
       "url": "https://github.com/KINGKAZMAX/unesco-virtual-museum-replica",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1414,7 +1414,7 @@
     {
       "name": "virtual-character-web",
       "url": "https://github.com/KINGKAZMAX/virtual-character-web",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1433,7 +1433,7 @@
     {
       "name": "zaiguan",
       "url": "https://github.com/KINGKAZMAX/zaiguan",
-      "category": "数字文化与空间交互",
+      "category": "Digital culture and spatial interaction",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1442,7 +1442,7 @@
       ],
       "github_license_spdx": "MIT",
       "topics": [],
-      "description": "再观 Zaiguan · 让观看发生第二次 —— 观展后个人文化记忆系统 | Post-visit personal cultural memory system",
+      "description": "Zaiguan: a post-visit system for personal cultural memory.",
       "aliases": [
         "zaiguan",
         "KINGKAZMAX/zaiguan",
@@ -1458,7 +1458,7 @@
     {
       "name": "ZEALWISH-WEB",
       "url": "https://github.com/KINGKAZMAX/ZEALWISH-WEB",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1491,7 +1491,7 @@
     {
       "name": "ZEALWISH-WEB3",
       "url": "https://github.com/KINGKAZMAX/ZEALWISH-WEB3",
-      "category": "角色与人机关系",
+      "category": "Characters and human–AI relationships",
       "fork": false,
       "upstream_repository": null,
       "upstream_url": null,
@@ -1501,7 +1501,7 @@
         "electron",
         "react"
       ],
-      "description": "ZEALWISH / OCWORLD 角色记忆、像素世界与身份归属方向的应用原型。",
+      "description": "ZEALWISH / OCWORLD application prototype exploring character memory, pixel worlds and identity.",
       "aliases": [
         "ZEALWISH-WEB3",
         "KINGKAZMAX/ZEALWISH-WEB3",
@@ -1516,14 +1516,14 @@
     {
       "name": "zjsu-ai-hackathon",
       "url": "https://github.com/KINGKAZMAX/zjsu-ai-hackathon",
-      "category": "活动与教育资料",
+      "category": "Events and educational materials",
       "fork": true,
       "upstream_repository": "1739467001-svg/zjsu-ai-hackathon",
       "upstream_url": "https://github.com/1739467001-svg/zjsu-ai-hackathon",
       "root_license_files": [],
       "github_license_spdx": null,
       "topics": [],
-      "description": "浙江工商大学信电学院、人工智能学院首届 AI 黑客松大赛 · 18 个 AI 赋能校园作品的星河长廊展示页（星空首屏 + 3D 轮播 + 星座筛选）",
+      "description": "Showcase for the first AI Hackathon at ZJGSU, with 18 campus-focused projects, a starfield landing view and 3D carousel.",
       "aliases": [
         "zjsu-ai-hackathon",
         "KINGKAZMAX/zjsu-ai-hackathon",
