@@ -1,445 +1,153 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f5f7">
-  <meta name="description" content="ZHIXIN CAI / KINGKAZMAX — exploring design research, creative coding, and human–AI interaction. Selected projects and evolving questions.">
-  <title>ZHIXIN CAI — Design & Computation</title>
-  <style>
-    :root { --paper:#f4f5f7; --ink:#181b22; --muted:#626975; --line:#cfd3da; --blue:#2453ef; --gutter:clamp(22px,4.8vw,88px); }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; scroll-padding-top:90px; }
-    body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif; -webkit-font-smoothing:antialiased; }
-    button,a { -webkit-tap-highlight-color:transparent; }
-    a { color:inherit; text-decoration:none; }
-    button { color:inherit; font:inherit; cursor:pointer; }
-    button:focus-visible,a:focus-visible,[tabindex]:focus-visible { outline:2px solid var(--blue); outline-offset:6px; }
-    button { border:0; background:none; }
-    ::selection { color:white; background:var(--blue); }
-    .mono { font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace; font-size:11px; font-weight:400; line-height:1.5; letter-spacing:.045em; }
-    .skip-link { position:fixed; top:10px; left:20px; z-index:10; padding:12px; background:white; transform:translateY(-150%); }
-    .skip-link:focus { transform:none; }
-    .site-header { position:relative; z-index:3; height:80px; margin:0 var(--gutter); border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:24px; }
-    .wordmark { font-size:13px; letter-spacing:.035em; font-weight:700; }
-    .wordmark span { color:var(--blue); margin-right:8px; }
-    .header-right { display:flex; align-items:center; gap:clamp(22px,3vw,48px); }
-    .header-nav { display:flex; gap:28px; font-size:12px; }
-    .header-nav a { padding:13px 0; }
-    .header-nav a:hover { color:var(--blue); }
-    .language { display:flex; gap:8px; align-items:center; font-size:12px; }
-    .language button { padding:12px 4px; color:var(--muted); }
-    .language button[aria-pressed="true"] { color:var(--ink); text-decoration:underline; text-underline-offset:5px; }
-    .language span { color:#b7bcc5; }
-    .hero { min-height:680px; height:calc(100svh - 80px); max-height:1100px; position:relative; isolation:isolate; overflow:hidden; }
-    .hero-text { position:relative; z-index:1; padding:clamp(50px,7.5vh,105px) var(--gutter) 0; pointer-events:none; }
-    .hero-text a { pointer-events:auto; }
-    .eyebrow { display:flex; gap:18px; align-items:center; margin:0 0 32px; color:var(--muted); }
-    .eyebrow::before { content:""; display:block; width:25px; height:1px; background:var(--blue); }
-    h1 { margin:0 0 30px -0.045em; font-size:clamp(94px,13.6vw,215px); line-height:.82; letter-spacing:-.085em; font-weight:500; }
-    h1 span { display:block; }
-    h1 .last { margin-top:.1em; }
-    .hero-intro { max-width:350px; margin-top:36px; }
-    .hero-intro .lead { font-size:clamp(16px,1.55vw,23px); line-height:1.4; letter-spacing:-.025em; max-width:330px; margin:0; }
-    .hero-intro .sub { margin:15px 0 23px; max-width:305px; font-size:12px; line-height:1.65; color:var(--muted); }
-    .text-link { display:inline-flex; align-items:center; justify-content:space-between; gap:45px; padding:10px 0; border-bottom:1px solid currentColor; font-size:12px; }
-    .text-link .arrow { font-size:20px; line-height:1; transition:transform .25s; }
-    .text-link:hover { color:var(--blue); }
-    .text-link:hover .arrow { transform:translate(3px,-3px); }
-    .field { position:absolute; z-index:0; top:0; right:-2%; width:61%; height:100%; margin:0; }
-    .field-surface { height:calc(100% - 115px); min-height:400px; position:relative; outline-offset:-18px!important; touch-action:pan-y; }
-    .field svg { width:100%; height:100%; display:block; overflow:visible; }
-    .field svg path { fill:none; stroke-width:.8; vector-effect:non-scaling-stroke; }
-    .field-caption { position:absolute; right:calc(var(--gutter) + 2vw); bottom:125px; display:flex; flex-direction:column; align-items:flex-end; color:var(--muted); pointer-events:none; }
-    .field-caption .field-name { color:var(--blue); margin-bottom:3px; }
-    .field-controls { display:flex; align-items:center; justify-content:flex-end; gap:18px; position:absolute; right:calc(var(--gutter) + 2vw); bottom:70px; }
-    .field-controls button { border-bottom:1px solid var(--line); padding:10px 0; font-size:11px; }
-    .field-controls button:hover { color:var(--blue); border-color:var(--blue); }
-    .field-controls .pause-dot { display:inline-block; width:5px; height:5px; background:var(--blue); margin-right:7px; border-radius:50%; }
-    .field-help { position:absolute; right:calc(var(--gutter) + 2vw); bottom:33px; font-size:10px; color:var(--muted); text-align:right; }
-    .hero-foot { position:absolute; bottom:35px; left:var(--gutter); display:flex; align-items:center; gap:15px; color:var(--muted); }
-    .hero-foot .down { color:var(--blue); font-size:21px; }
-    .section { margin:0 var(--gutter); padding:85px 0 75px; border-top:1px solid var(--ink); }
-    .section-top { display:flex; justify-content:space-between; align-items:flex-start; gap:30px; margin-bottom:48px; }
-    .section-index { color:var(--muted); padding-top:7px; min-width:90px; }
-    .section-heading { flex:1; }
-    h2 { margin:0; font-weight:400; font-size:clamp(42px,6vw,90px); letter-spacing:-.065em; line-height:1.05; }
-    .section-heading p { margin:22px 0 0; font-size:14px; line-height:1.7; color:var(--muted); max-width:400px; }
-    .section-annotation { color:var(--muted); text-align:right; padding-top:8px; }
-    .work-toolbar { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:17px 0; border-top:1px solid var(--line); }
-    .filters { display:flex; gap:25px; flex-wrap:wrap; }
-    .filter { padding:9px 0; font-size:12px; color:var(--muted); border-bottom:1px solid transparent; }
-    .filter[aria-pressed="true"] { color:var(--blue); border-bottom-color:var(--blue); }
-    .work-count { color:var(--muted); white-space:nowrap; }
-    .project { display:grid; grid-template-columns:58px minmax(0,1fr) minmax(250px,.8fr) 36px; gap:24px; align-items:start; padding:34px 0 32px; border-top:1px solid var(--line); transition:background-color .2s; }
-    .project[hidden] { display:none; }
-    .project-number { color:var(--muted); padding-top:9px; }
-    .project-title { margin:0; font-weight:400; line-height:1.15; font-size:clamp(25px,2.8vw,42px); letter-spacing:-.05em; }
-    .project-title a { display:inline; }
-    .project-title a:hover { color:var(--blue); }
-    .project-note { display:block; margin-top:13px; font-size:11px; color:var(--muted); line-height:1.7; }
-    .project-description { margin:7px 0 13px; font-size:13px; line-height:1.7; max-width:420px; color:#4f5661; }
-    .project-links { display:flex; flex-wrap:wrap; gap:19px; }
-    .project-links a { display:inline-block; font-size:11px; line-height:1.8; border-bottom:1px solid #b9bec8; }
-    .project-links a:hover { color:var(--blue); border-color:var(--blue); }
-    .project-arrow { color:var(--blue); font-size:27px; padding-top:5px; transition:transform .2s; }
-    .project:hover .project-arrow { transform:translate(3px,-3px); }
-    .work-bottom { border-top:1px solid var(--line); padding-top:25px; display:flex; justify-content:space-between; align-items:center; gap:30px; }
-    .work-bottom p { margin:0; max-width:480px; font-size:11px; line-height:1.7; color:var(--muted); }
-    .questions { background:var(--ink); color:var(--paper); padding:88px var(--gutter) 95px; }
-    .questions .section-top { margin-bottom:60px; }
-    .questions .section-index,.questions .section-annotation { color:#9ca4b1; }
-    .questions h2 { font-size:clamp(42px,5.7vw,82px); }
-    .question { display:grid; grid-template-columns:120px 1fr 1fr; gap:25px; padding:28px 0 35px; border-top:1px solid #444952; }
-    .question .mono { color:#919ba9; padding-top:6px; }
-    .question h3 { margin:0; font-size:clamp(24px,3vw,40px); letter-spacing:-.045em; line-height:1.2; font-weight:400; }
-    .question p { margin:4px 0 0; color:#b6bdc8; font-size:14px; line-height:1.7; max-width:420px; }
-    .questions-foot { margin:22px 0 0 145px; max-width:650px; color:#919ba9; font-size:11px; line-height:1.7; }
-    .closing { padding:90px var(--gutter) 50px; }
-    .closing-top { display:flex; justify-content:space-between; align-items:flex-end; gap:35px; }
-    .closing h2 { max-width:750px; font-size:clamp(52px,7vw,108px); }
-    .closing .text-link { margin-bottom:8px; min-width:150px; }
-    .closing-description { max-width:420px; color:var(--muted); font-size:13px; line-height:1.7; margin:27px 0 75px; }
-    footer { border-top:1px solid var(--line); padding-top:23px; display:flex; justify-content:space-between; gap:24px; color:var(--muted); }
-    .footer-links { display:flex; gap:28px; }
-    .footer-links a:hover { color:var(--blue); }
-    .visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
-    .reveal { animation:enter .85s cubic-bezier(.2,.7,.2,1) both; }
-    .hero-intro.reveal { animation-delay:.12s; }
-    @keyframes enter { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
-    @media(min-width:1700px) { .hero-text { padding-top:100px; } .hero-intro { margin-top:45px; } }
-    @media(max-width:1000px) {
-      .hero { min-height:650px; max-height:900px; }
-      h1 { font-size:15vw; }
-      .field { width:64%; right:-9%; }
-      .field-caption,.field-controls,.field-help { right:calc(var(--gutter) + 9vw); }
-      .hero-intro { max-width:290px; }
-      .hero-intro .lead { max-width:280px; }
-      .section-top { gap:20px; }
-      .section-index { min-width:65px; }
-      .section-annotation { max-width:140px; }
-      .project { grid-template-columns:30px 1fr 1fr 20px; gap:18px; }
-      .question { grid-template-columns:65px 1fr 1fr; gap:20px; }
-      .questions-foot { margin-left:85px; }
-    }
-    @media(max-width:700px) {
-      html { scroll-padding-top:25px; }
-      .site-header { height:68px; }
-      .header-nav { display:none; }
-      .wordmark { font-size:12px; }
-      .hero { height:calc(100svh - 68px); min-height:730px; max-height:1000px; }
-      .hero-text { padding-top:45px; }
-      .eyebrow { margin-bottom:30px; font-size:10px; }
-      h1 { font-size:23vw; line-height:.85; letter-spacing:-.075em; }
-      h1 .last { margin-top:.06em; }
-      .hero-intro { max-width:340px; margin-top:30px; }
-      .hero-intro .lead { font-size:19px; max-width:300px; }
-      .hero-intro .sub { font-size:12px; max-width:300px; margin:12px 0 13px; }
-      .field { height:365px; width:100%; top:auto; bottom:0; right:0; }
-      .field-surface { height:295px; min-height:0; }
-      .field svg { overflow:hidden; }
-      .field-caption { bottom:105px; right:var(--gutter); font-size:9px; }
-      .field-controls { bottom:58px; right:var(--gutter); }
-      .field-help { bottom:23px; right:var(--gutter); max-width:210px; font-size:9px; }
-      .hero-foot { bottom:22px; font-size:9px; max-width:110px; gap:8px; }
-      .hero-foot .down { font-size:18px; }
-      .section { padding:55px 0; }
-      .section-top { margin-bottom:35px; gap:15px; flex-wrap:wrap; }
-      .section-index { width:100%; padding:0; }
-      .section-heading { flex-basis:70%; }
-      .section-annotation { max-width:80px; font-size:9px; }
-      .section-heading p { font-size:12px; margin-top:18px; max-width:300px; }
-      .work-toolbar { align-items:flex-start; gap:10px; }
-      .filters { gap:7px 19px; max-width:300px; }
-      .filter { font-size:11px; padding:7px 0; }
-      .work-count { padding-top:6px; font-size:10px; }
-      .project { grid-template-columns:25px 1fr 20px; gap:12px; padding:27px 0; }
-      .project-title { font-size:29px; }
-      .project-content { grid-column:2; }
-      .project-arrow { grid-column:3; grid-row:1; font-size:23px; }
-      .project-number { padding-top:5px; font-size:10px; }
-      .project-note { margin-top:9px; font-size:10px; }
-      .project-description { margin-top:0; font-size:12px; }
-      .work-bottom { flex-direction:column; align-items:flex-start; gap:15px; }
-      .questions { padding:58px var(--gutter); }
-      .questions .section-top { margin-bottom:38px; }
-      .question { grid-template-columns:25px 1fr; gap:12px; padding:25px 0; }
-      .question p { grid-column:2; font-size:12px; margin:0; }
-      .question .mono { font-size:10px; }
-      .questions-foot { margin-left:37px; font-size:10px; }
-      .closing { padding:60px var(--gutter) 30px; }
-      .closing-top { flex-direction:column; align-items:flex-start; gap:25px; }
-      .closing h2 { font-size:15vw; }
-      .closing-description { font-size:12px; margin:22px 0 50px; }
-      footer { flex-direction:column; font-size:9px; gap:15px; }
-      .footer-links { justify-content:space-between; }
-    }
-    @media(prefers-reduced-motion:reduce) {
-      html { scroll-behavior:auto; }
-      *,*::before,*::after { animation:none!important; transition:none!important; }
-    }
-  </style>
+  <meta name="theme-color" content="#eeeae2">
+  <meta name="description" content="ZHIXIN CAI / KINGKAZMAX 的研究与探索空间。HCI × AI、计算与空间、数字文化与沉浸体验，也有 PTCG、黑客松和未完成的好奇心。">
+  <title>KINGKAZMAX — 认真研究，也认真地玩</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#work" data-en="Skip to selected work" data-zh="跳到精选作品">Skip to selected work</a>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="KINGKAZMAX home"><span>↗</span>KINGKAZMAX</a>
-    <div class="header-right">
-      <nav class="header-nav" aria-label="Main navigation">
-        <a href="#work" data-en="Selected work" data-zh="精选作品">Selected work</a>
-        <a href="#questions" data-en="Open questions" data-zh="探索中的问题">Open questions</a>
-        <a href="https://github.com/KINGKAZMAX">GitHub ↗</a>
-      </nav>
-      <div class="language" role="group" aria-label="Language / 语言">
-        <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button><span aria-hidden="true">/</span><button type="button" data-language="zh" aria-pressed="false" lang="zh-CN">中文</button>
-      </div>
+<body data-theme="light" data-motion="on">
+  <a class="skip-link" href="#research" data-zh="跳到研究方向" data-en="Skip to research">跳到研究方向</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#top" aria-label="KINGKAZMAX home"><span class="brand-mark" aria-hidden="true">k.</span><span>KINGKAZMAX<span class="wordmark-sub">ZHIXIN CAI</span></span></a>
+    <nav class="header-nav" aria-label="主要导航 / Main navigation">
+      <a href="#research" data-zh="研究地图" data-en="Research map">研究地图</a>
+      <a href="#play" data-zh="玩一会儿" data-en="Play a little">玩一会儿</a>
+    </nav>
+    <div class="header-controls">
+      <button id="lang" class="utility" type="button" data-zh="EN" data-en="中文" aria-label="切换语言 / Switch language">EN</button>
+      <button id="theme" class="utility" type="button" data-zh="明暗" data-en="Theme">明暗</button>
+      <button id="motion" class="utility" type="button" aria-pressed="true" data-zh="动态" data-en="Motion">动态</button>
     </div>
   </header>
+
   <main id="top">
-    <section class="hero" aria-labelledby="name">
-      <div class="hero-text">
-        <p class="eyebrow mono reveal" data-en="DESIGN × COMPUTATION" data-zh="设计 × 计算">DESIGN × COMPUTATION</p>
-        <h1 id="name" class="reveal"><span>ZHIXIN</span><span class="last">CAI<span class="visually-hidden"> / KINGKAZMAX</span></span></h1>
-        <div class="hero-intro reveal">
-          <p class="lead" data-en="Exploring the space between design and computation." data-zh="在设计与计算之间，探索新的可能。">Exploring the space between design and computation.</p>
-          <p class="sub" data-en="Design Research · Creative Coding · Human–AI Interaction" data-zh="设计研究 · 创意编程 · 人与 AI 的交互">Design Research · Creative Coding · Human–AI Interaction</p>
-          <a class="text-link" href="#work"><span data-en="Explore selected work" data-zh="浏览精选作品">Explore selected work</span><span class="arrow" aria-hidden="true">↗</span></a>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <p class="eyebrow mono"><span class="status-dot" aria-hidden="true"></span><span data-zh="个人研究实验室 · 持续生长中" data-en="A PERSONAL RESEARCH PLAYGROUND · STILL GROWING">个人研究实验室 · 持续生长中</span></p>
+          <h1 id="hero-title"><span data-zh="认真研究。" data-en="Think deeply.">认真研究。</span><span class="play-line" data-zh="也认真地玩。" data-en="Play fully.">也认真地玩。</span></h1>
+          <p class="hero-intro" data-zh="我在探索 AI、交互空间与文化体验，如何改变我们理解、记忆和创作的方式。" data-en="Exploring how AI, interactive spaces, and cultural experiences shape the way we understand, remember, and create.">我在探索 AI、交互空间与文化体验，如何改变我们理解、记忆和创作的方式。</p>
+          <div class="personal-notes mono"><span data-zh="PTCG 参赛者" data-en="PTCG tournament participant">PTCG 参赛者</span><span aria-hidden="true">/</span><span data-zh="黑客松参与者" data-en="Hackathon participant">黑客松参与者</span><span aria-hidden="true">/</span><span data-zh="保持好奇" data-en="Still curious">保持好奇</span></div>
+          <a class="text-link" href="#research"><span data-zh="看看我正在想什么" data-en="See what's on my mind">看看我正在想什么</span><span aria-hidden="true">↘</span></a>
+        </div>
+
+        <div class="pet-stage">
+          <div class="stage-heading mono"><span data-zh="桌面伙伴 / 亚古兽" data-en="DESK COMPANION / AGUMON">桌面伙伴 / 亚古兽</span><span class="stage-index">01—∞</span></div>
+          <div class="pet-world" id="pet-world">
+            <svg class="pet-orbits" viewBox="0 0 520 390" aria-hidden="true"><ellipse cx="260" cy="225" rx="226" ry="99" transform="rotate(-16 260 225)"/><ellipse cx="260" cy="225" rx="173" ry="139" transform="rotate(20 260 225)"/><path d="M37 304h37m-18-18v36M444 85h24m-12-12v24"/><circle cx="424" cy="297" r="5"/></svg>
+            <span class="stage-scribble" data-zh="好奇心，也需要搭子。" data-en="Curiosity likes company.">好奇心，也需要搭子。</span>
+            <span class="stage-ground" aria-hidden="true"></span>
+            <button id="pet-touch" type="button" aria-label="和亚古兽互动 / Interact with Agumon">
+              <img id="pet-poster" src="assets/pet/poster.png" width="192" height="208" alt="亚古兽像素伙伴 / Agumon pixel companion">
+              <canvas id="pet-canvas" width="192" height="208" hidden aria-hidden="true"></canvas>
+              <span id="pet-symbol" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p id="pet-message" class="pet-message" role="status" aria-live="polite" data-zh="嗨，欢迎来到我的实验室。一起待一会儿？" data-en="Hey, welcome to my little lab. Stay a while?">嗨，欢迎来到我的实验室。一起待一会儿？</p>
+          <div class="pet-controls" aria-label="伙伴互动 / Companion controls">
+            <button type="button" data-pet="feed"><span aria-hidden="true">◒</span><span data-zh="喂一口" data-en="Feed">喂一口</span></button>
+            <button type="button" data-pet="pat"><span aria-hidden="true">♡</span><span data-zh="摸摸头" data-en="Pat">摸摸头</span></button>
+            <button type="button" data-pet="play"><span aria-hidden="true">✳</span><span data-zh="一起玩" data-en="Play">一起玩</span></button>
+            <button type="button" data-pet="rest" aria-pressed="false"><span aria-hidden="true">☾</span><span data-zh="休息" data-en="Rest">休息</span></button>
+          </div>
         </div>
       </div>
-      <figure class="field">
-        <div class="field-surface" id="field-surface" tabindex="0" role="group" aria-label="Interactive line field. Use arrow keys to change its shape, Space to pause, R to reset." aria-describedby="field-help">
-          <svg id="field-svg" viewBox="0 0 800 800" aria-hidden="true">
-            <g id="contours" stroke="#505d75" opacity=".65">
-              <ellipse cx="400" cy="390" rx="240" ry="285" fill="none"/>
-              <ellipse cx="400" cy="390" rx="210" ry="250" fill="none"/>
-              <ellipse cx="400" cy="390" rx="180" ry="215" fill="none"/>
-              <ellipse cx="400" cy="390" rx="150" ry="180" fill="none"/>
-            </g>
-            <g id="field-marker" stroke="#2453ef" stroke-width="1" fill="none"><path d="M390 390h20M400 380v20"/><circle cx="400" cy="390" r="4" fill="#2453ef"/></g>
-          </svg>
-        </div>
-        <figcaption class="field-caption mono"><span class="field-name" data-en="FIELD STUDY / 001" data-zh="线场实验 / 001">FIELD STUDY / 001</span><span id="field-coordinates">X 0.50 · Y 0.50</span></figcaption>
-        <div class="field-controls">
-          <button id="motion-toggle" type="button"><span class="pause-dot" aria-hidden="true"></span><span id="motion-label">Pause motion</span></button>
-          <button id="field-reset" type="button" data-en="Reset ↺" data-zh="重置 ↺">Reset ↺</button>
-        </div>
-        <p id="field-help" class="field-help" data-en="Move to reshape. Focus + arrow keys to explore." data-zh="移动指针改变线场。聚焦后可用方向键探索。">Move to reshape. Focus + arrow keys to explore.</p>
-      </figure>
-      <div class="hero-foot mono"><span class="down" aria-hidden="true">↓</span><span data-en="SELECTED PROJECTS BELOW" data-zh="下方 / 精选项目">SELECTED PROJECTS BELOW</span></div>
+      <div class="hero-baseline shell mono"><span data-zh="问题、实验，以及尚未想清楚的部分。" data-en="QUESTIONS, EXPERIMENTS, AND THE PARTS STILL TAKING SHAPE.">问题、实验，以及尚未想清楚的部分。</span><span class="clock-wrap"><span data-zh="你的时间" data-en="YOUR LOCAL TIME">你的时间</span><time id="clock">--:--:--</time></span></div>
     </section>
 
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="section-top">
-        <span class="section-index mono">01 / INDEX</span>
-        <div class="section-heading"><h2 id="work-title" data-en="Selected work." data-zh="精选作品。">Selected work.</h2><p data-en="Prototypes, studies, and tools. Each project opens a different question." data-zh="原型、研究与工具。从具体实践，打开不同的问题。">Prototypes, studies, and tools. Each project opens a different question.</p></div>
-        <span class="section-annotation mono" data-en="SIX ENTRIES / AN EVOLVING PRACTICE" data-zh="六个入口 / 持续探索">SIX ENTRIES /<br>AN EVOLVING PRACTICE</span>
-      </div>
-      <div class="work-toolbar">
-        <div class="filters" role="group" aria-label="Filter projects by direction">
-          <button class="filter" data-filter="all" aria-pressed="true" data-en="All work" data-zh="全部">All work</button>
-          <button class="filter" data-filter="culture" aria-pressed="false" data-en="Culture & interaction" data-zh="文化与交互">Culture & interaction</button>
-          <button class="filter" data-filter="research" aria-pressed="false" data-en="Research & space" data-zh="研究与空间">Research & space</button>
-          <button class="filter" data-filter="tools" aria-pressed="false" data-en="AI & creative tools" data-zh="AI 与创作工具">AI & creative tools</button>
+    <section id="research" class="research section shell" aria-labelledby="research-title">
+      <div class="section-heading"><p class="section-index mono">01 / INQUIRY</p><div><h2 id="research-title" data-zh="问题之间，有引力。" data-en="Questions pull together.">问题之间，有引力。</h2><p class="section-intro" data-zh="正在探索 HCI × AI、计算与空间设计、数字文化遗产与沉浸体验交叉处的博士研究方向。游戏与实践，也不断带来新的问题。" data-en="Exploring directions for doctoral research across HCI and AI, computational and spatial design, and digital heritage and immersive experiences. Games and hands-on experiments bring new questions, too.">正在探索 HCI × AI、计算与空间设计、数字文化遗产与沉浸体验交叉处的博士研究方向。游戏与实践，也不断带来新的问题。</p></div></div>
+      <div class="research-layout">
+        <div class="interest-map" aria-label="选择一个探索方向 / Choose an area of curiosity">
+          <svg class="map-lines" viewBox="0 0 620 350" preserveAspectRatio="none" aria-hidden="true"><path d="M130 85L480 95L465 265L140 265Z M130 85L465 265 M480 95L140 265"/><circle cx="305" cy="178" r="42"/><circle cx="305" cy="178" r="5" class="map-center"/></svg>
+          <span class="map-center-label mono" data-zh="相互连接" data-en="CONNECTED">相互连接</span>
+          <button class="map-node map-ai" type="button" data-topic="ai" aria-pressed="true"><span class="node-dot" aria-hidden="true"></span><span class="node-number mono">01</span><strong data-zh="人与 AI" data-en="People & AI">人与 AI</strong><small data-zh="理解 · 判断 · 共创" data-en="Understanding · Agency · Co-creation">理解 · 判断 · 共创</small></button>
+          <button class="map-node map-space" type="button" data-topic="space" aria-pressed="false"><span class="node-dot" aria-hidden="true"></span><span class="node-number mono">02</span><strong data-zh="计算与空间" data-en="Computation & Space">计算与空间</strong><small data-zh="规则 · 形态 · 可能性" data-en="Rules · Form · Possibility">规则 · 形态 · 可能性</small></button>
+          <button class="map-node map-culture" type="button" data-topic="culture" aria-pressed="false"><span class="node-dot" aria-hidden="true"></span><span class="node-number mono">03</span><strong data-zh="文化与体验" data-en="Culture & Experience">文化与体验</strong><small data-zh="沉浸 · 记忆 · 语境" data-en="Immersion · Memory · Context">沉浸 · 记忆 · 语境</small></button>
+          <button class="map-node map-play" type="button" data-topic="play" aria-pressed="false"><span class="node-dot" aria-hidden="true"></span><span class="node-number mono">04</span><strong data-zh="游戏与试验" data-en="Play & Experiment">游戏与试验</strong><small data-zh="卡牌 · 黑客松 · 好奇心" data-en="Cards · Hackathons · Curiosity">卡牌 · 黑客松 · 好奇心</small></button>
         </div>
-        <span class="work-count mono" id="work-count" aria-live="polite" aria-atomic="true">06 / 06</span>
+        <div class="topic-detail" aria-live="polite" aria-atomic="true">
+          <p id="topic-kicker" class="mono kicker" data-zh="01 / 人机交互 × AI" data-en="01 / HCI × AI">01 / 人机交互 × AI</p>
+          <h3 id="topic-title" data-zh="当 AI 参与互动，人如何保持判断？" data-en="When AI joins an interaction, how do people retain judgment?">当 AI 参与互动，人如何保持判断？</h3>
+          <p id="topic-description" data-zh="我关心人在智能系统中怎样理解信息、作出选择，以及参与创作。让过程、依据与局限可见，是正在探索的问题之一。" data-en="I'm interested in how people understand information, make choices, and create with intelligent systems—and how their processes, evidence, and limits can remain visible.">我关心人在智能系统中怎样理解信息、作出选择，以及参与创作。让过程、依据与局限可见，是正在探索的问题之一。</p>
+          <p id="topic-tags" class="topic-tags mono">HCI · HUMAN–AI INTERACTION · EVIDENCE</p>
+          <p id="topic-status" class="topic-status mono" data-zh="博士研究方向探索中" data-en="DIRECTIONS FOR DOCTORAL RESEARCH">博士研究方向探索中</p>
+        </div>
       </div>
-      <div class="projects" id="projects">
-        <article class="project" data-categories="culture">
-          <span class="project-number mono">01</span>
-          <div><h3 class="project-title"><a href="https://github.com/KINGKAZMAX/nuo-culture-digital-museum" data-en="Nuo Culture Digital Museum" data-zh="贵傩戏 · 数字博物馆">Nuo Culture<br>Digital Museum</a></h3><span class="project-note" data-en="Cultural experience prototype · Three.js / MediaPipe" data-zh="文化体验原型 · Three.js / MediaPipe">Cultural experience prototype · Three.js / MediaPipe</span></div>
-          <div class="project-content"><p class="project-description" data-en="Point-cloud masks, gesture interaction, and browser-based AR as ways into Nuo culture." data-zh="以点云面具、手势交互与浏览器 AR，探索傩文化的数字体验。">Point-cloud masks, gesture interaction, and browser-based AR as ways into Nuo culture.</p><div class="project-links"><a href="https://kingkazmax.github.io/nuo-culture-digital-museum/" data-en="Enter the museum ↗" data-zh="进入博物馆 ↗">Enter the museum ↗</a><a href="https://github.com/KINGKAZMAX/nuo-culture-digital-museum" data-en="Repository ↗" data-zh="查看仓库 ↗">Repository ↗</a></div></div><span class="project-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="project" data-categories="research">
-          <span class="project-number mono">02</span>
-          <div><h3 class="project-title"><a href="https://github.com/KINGKAZMAX/DigitalFUTURES2026-UrbanCoCreation-Team4-ProceduralMassing" data-en="Urban Co-Creation" data-zh="城市共创 · 程序化体量">Urban Co-Creation</a></h3><span class="project-note" data-en="DigitalFUTURES 2026 · Team 4 workshop study" data-zh="DigitalFUTURES 2026 · 第四组工作坊研究">DigitalFUTURES 2026 · Team 4 workshop study</span></div>
-          <div class="project-content"><p class="project-description" data-en="Signed-distance fields connect four massing families. Rhino/Python studies with versioned parameters and design records." data-zh="由 SDF 距离场连接四类建筑体量。以 Rhino/Python 探索形态过渡，并保存版本参数与设计记录。">Signed-distance fields connect four massing families. Rhino/Python studies with versioned parameters and design records.</p><div class="project-links"><a href="https://github.com/KINGKAZMAX/DigitalFUTURES2026-UrbanCoCreation-Team4-ProceduralMassing" data-en="Explore the study ↗" data-zh="查看设计研究 ↗">Explore the study ↗</a></div></div><span class="project-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="project" data-categories="research">
-          <span class="project-number mono">03</span>
-          <div><h3 class="project-title"><a href="https://github.com/KINGKAZMAX/immersive-hci-evidence-governance" data-en="Immersive HCI" data-zh="沉浸式 HCI · 证据组织">Immersive HCI</a></h3><span class="project-note" data-en="Review manuscript · Supporting research materials" data-zh="综述投稿稿件 · 配套研究材料">Review manuscript · Supporting research materials</span></div>
-          <div class="project-content"><p class="project-description" data-en="A framework-development archive connecting claims and evidence: manuscript, frozen search specification, conceptual figure, and build code." data-zh="围绕主张与证据关系的框架开发档案：投稿稿件、冻结检索式、概念图与文档构建代码。">A framework-development archive connecting claims and evidence: manuscript, frozen search specification, conceptual figure, and build code.</p><div class="project-links"><a href="https://github.com/KINGKAZMAX/immersive-hci-evidence-governance" data-en="Read the materials ↗" data-zh="阅读研究材料 ↗">Read the materials ↗</a></div></div><span class="project-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="project" data-categories="culture">
-          <span class="project-number mono">04</span>
-          <div><h3 class="project-title"><a href="https://github.com/KINGKAZMAX/AdventuregameX">AdventuregameX</a></h3><span class="project-note" data-en="Web experience prototype · Third-party components" data-zh="网页体验原型 · 使用第三方组件">Web experience prototype · Third-party components</span></div>
-          <div class="project-content"><p class="project-description" data-en="A hub for a tactile 3D Game Boy experience and a virtual-pet toy. Third-party component sources are documented in the repository." data-zh="连接触感 3D Game Boy 体验与虚拟宠物玩具的入口。第三方组件来源记录于仓库。">A hub for a tactile 3D Game Boy experience and a virtual-pet toy. Third-party component sources are documented in the repository.</p><div class="project-links"><a href="https://github.com/KINGKAZMAX/AdventuregameX" data-en="Explore the project ↗" data-zh="查看项目 ↗">Explore the project ↗</a></div></div><span class="project-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="project" data-categories="tools">
-          <span class="project-number mono">05</span>
-          <div><h3 class="project-title"><a href="https://github.com/KINGKAZMAX/kingkazmax-artist-archive" data-en="Artist Archive" data-zh="角色创作档案">Artist Archive</a></h3><span class="project-note" data-en="AI-assisted character creation · Canvas remix" data-zh="AI 辅助角色创作 · Canvas 图像再创作">AI-assisted character creation · Canvas remix</span></div>
-          <div class="project-content"><p class="project-description" data-en="Generated character portraits, fictional dossiers, and documented iterations. The browser studio remixes existing images locally." data-zh="生成式角色肖像、虚构人物档案与迭代记录。浏览器工作室在本地对已有图像进行再创作。">Generated character portraits, fictional dossiers, and documented iterations. The browser studio remixes existing images locally.</p><div class="project-links"><a href="https://kingkazmax.github.io/kingkazmax-artist-archive/" data-en="Open the archive ↗" data-zh="打开创作档案 ↗">Open the archive ↗</a><a href="https://github.com/KINGKAZMAX/kingkazmax-artist-archive" data-en="Process & sources ↗" data-zh="过程与来源 ↗">Process & sources ↗</a></div></div><span class="project-arrow" aria-hidden="true">↗</span>
-        </article>
-        <article class="project" data-categories="tools">
-          <span class="project-number mono">06</span>
-          <div><h3 class="project-title"><a href="https://github.com/KINGKAZMAX/DesignVault-Z">DesignVault-Z</a></h3><span class="project-note" data-en="Resource curation · Searchable index" data-zh="设计资源策展 · 可检索目录">Resource curation · Searchable index</span></div>
-          <div class="project-content"><p class="project-description" data-en="An organized collection of design resources for browsing and discovery. Linked resources belong to their respective creators." data-zh="整理设计资源，支持浏览与发现。收录资源归各自创作者所有。">An organized collection of design resources for browsing and discovery. Linked resources belong to their respective creators.</p><div class="project-links"><a href="https://github.com/KINGKAZMAX/DesignVault-Z" data-en="Browse the collection ↗" data-zh="浏览资源目录 ↗">Browse the collection ↗</a></div></div><span class="project-arrow" aria-hidden="true">↗</span>
-        </article>
-      </div>
-      <div class="work-bottom"><p data-en="Project status, collaboration context, dependencies, and source credits are documented in each repository." data-zh="项目状态、协作背景、依赖与来源署名，请以各仓库记录为准。">Project status, collaboration context, dependencies, and source credits are documented in each repository.</p><a class="text-link" href="https://github.com/KINGKAZMAX/KINGKAZMAX/blob/main/docs/REPOSITORIES.md"><span data-en="Repository index" data-zh="分类仓库索引">Repository index</span><span class="arrow" aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="questions" id="questions" aria-labelledby="questions-title">
-      <div class="section-top"><span class="section-index mono">02 / INQUIRY</span><div class="section-heading"><h2 id="questions-title" data-en="Questions in progress." data-zh="探索中的问题。">Questions in progress.</h2></div><span class="section-annotation mono" data-en="DESIGN AS A WAY OF ASKING" data-zh="以设计 / 提出问题">DESIGN AS<br>A WAY OF ASKING</span></div>
-      <div class="question"><span class="mono">Q.01</span><h3 data-en="Culture × interaction" data-zh="文化 × 交互">Culture × interaction</h3><p data-en="How can gestures and spatial interfaces invite closer encounters with cultural material?" data-zh="手势与空间界面，如何让人更贴近文化材料？">How can gestures and spatial interfaces invite closer encounters with cultural material?</p></div>
-      <div class="question"><span class="mono">Q.02</span><h3 data-en="Space × computation" data-zh="空间 × 计算">Space × computation</h3><p data-en="How can a parametric study make design alternatives easier to compare and discuss?" data-zh="参数化探索，如何让不同设计方案更容易比较与讨论？">How can a parametric study make design alternatives easier to compare and discuss?</p></div>
-      <div class="question"><span class="mono">Q.03</span><h3 data-en="AI × creative practice" data-zh="AI × 创作实践">AI × creative practice</h3><p data-en="How can AI-assisted workflows preserve the reasoning, attribution, and decisions behind a prototype?" data-zh="AI 辅助创作，如何保留原型背后的推理、署名与设计判断？">How can AI-assisted workflows preserve the reasoning, attribution, and decisions behind a prototype?</p></div>
-      <p class="questions-foot" data-en="Ongoing questions, explored through prototypes, methods, and documented iterations." data-zh="以原型、方法与可追溯的迭代，持续探索这些问题。">Ongoing questions, explored through prototypes, methods, and documented iterations.</p>
+    <section id="play" class="play-section section shell" aria-labelledby="play-title">
+      <div class="section-heading"><p class="section-index mono">02 / PLAY DESK</p><div><h2 id="play-title" data-zh="坐下来，玩一会儿。" data-en="Take a seat. Try something.">坐下来，玩一会儿。</h2><p class="section-intro" data-zh="抽一个问题，画一笔，或者安静专注二十五分钟。没有标准答案。" data-en="Draw a question, make a mark, or settle into twenty-five quiet minutes. No right answers required.">抽一个问题，画一笔，或者安静专注二十五分钟。没有标准答案。</p></div><span class="desk-note mono" data-zh="六件小工具 / 随意试用" data-en="SIX SMALL TOOLS / MAKE YOURSELF AT HOME">六件小工具 / 随意试用</span></div>
+      <div class="desk-grid">
+        <article id="collision" class="widget collision-widget" aria-labelledby="collision-title">
+          <div class="widget-heading"><span class="mono widget-number">A / 01</span><span class="widget-glyph" aria-hidden="true">↗↙</span></div>
+          <h3 id="collision-title" data-zh="让想法撞一下" data-en="Let ideas collide">让想法撞一下</h3>
+          <p class="widget-intro" data-zh="让两个想法，碰撞出一个新问题。" data-en="Let two ideas collide into a new question.">让两个想法，碰撞出一个新问题。</p>
+          <p id="idea-terms" class="idea-terms" data-zh="文化记忆 × 空间交互" data-en="Cultural memory × Spatial interaction">文化记忆 × 空间交互</p>
+          <p id="idea-prompt" class="idea-prompt" aria-live="polite" data-zh="如果记忆可以被触摸，我们会怎样重新理解一次体验？" data-en="If a memory could be touched, how might we understand an experience differently?">如果记忆可以被触摸，我们会怎样重新理解一次体验？</p>
+          <button id="shuffle" class="button button-outline widget-action" type="button" data-zh="再碰撞一次 ↗" data-en="Another collision ↗">再碰撞一次 ↗</button>
+        </article>
+
+        <article id="ptcg" class="widget ptcg-widget" aria-labelledby="ptcg-title">
+          <div class="widget-heading"><span class="mono widget-number">B / 02</span><span class="widget-glyph" aria-hidden="true">◇</span></div>
+          <h3 id="ptcg-title" data-zh="今天，抽到什么？" data-en="What's in your hand?">今天，抽到什么？</h3>
+          <p class="widget-intro" data-zh="从 PTCG 的乐趣出发，抽一张原创思考卡。" data-en="A little PTCG-inspired ritual: draw an original thought card.">从 PTCG 的乐趣出发，抽一张原创思考卡。</p>
+          <button id="draw-card" aria-describedby="card-title card-text" class="thought-card" type="button" aria-label="抽取另一张思考卡 / Draw another thought card">
+            <span class="card-top mono"><span>THOUGHT CARD</span><span aria-hidden="true">✳</span></span>
+            <strong id="card-title" data-zh="换一个视角" data-en="Change your perspective">换一个视角</strong>
+            <span id="card-text" aria-live="polite" data-zh="如果让一个完全陌生的人来使用，你会先改掉什么？" data-en="What would you change first if a complete stranger had to use it?">如果让一个完全陌生的人来使用，你会先改掉什么？</span>
+            <span class="card-bottom mono" data-zh="点击，再抽一张 ↗" data-en="TAP TO DRAW AGAIN ↗">点击，再抽一张 ↗</span>
+          </button>
+        </article>
+
+        <article id="focus" class="widget focus-widget" aria-labelledby="focus-title">
+          <div class="widget-heading"><span class="mono widget-number">C / 03</span><span class="widget-glyph" aria-hidden="true">◷</span></div>
+          <h3 id="focus-title" data-zh="给好奇心一点时间" data-en="Give curiosity some time">给好奇心一点时间</h3>
+          <p class="widget-intro" data-zh="一个问题，一小段不被打断的时间。" data-en="One question. A little uninterrupted time.">一个问题，一小段不被打断的时间。</p>
+          <output aria-live="off" id="timer" class="timer mono" aria-label="剩余时间 / Time remaining">25:00</output>
+          <p id="timer-status" class="timer-status mono" role="status" data-zh="准备好了，就开始。" data-en="Ready whenever you are.">准备好了，就开始。</p>
+          <div class="timer-controls"><button id="timer-toggle" class="button button-primary" type="button" data-zh="开始" data-en="Start">开始</button><button id="timer-reset" class="button button-outline" type="button" data-zh="重置" data-en="Reset">重置</button></div>
+          <button id="timer-mode" class="mode-button mono" type="button" data-zh="切换专注 / 休息" data-en="SWITCH FOCUS / BREAK">切换专注 / 休息</button>
+        </article>
+
+        <article id="hackathon" class="widget hackathon-widget" aria-labelledby="hackathon-title">
+          <div class="widget-heading"><span class="mono widget-number">D / 04</span><span class="widget-glyph" aria-hidden="true">⌁</span></div>
+          <h3 id="hackathon-title" data-zh="一场微型黑客松" data-en="A tiny hackathon">一场微型黑客松</h3>
+          <p class="widget-intro" data-zh="把大想法，变成一个今天就能开始的动作。" data-en="Turn a big idea into something you can start today.">把大想法，变成一个今天就能开始的动作。</p>
+          <div class="challenge-tabs" role="group" aria-label="选择试验阶段 / Choose an experiment stage"><button type="button" data-challenge="question" aria-pressed="true" data-zh="提问" data-en="Question">提问</button><button type="button" data-challenge="prototype" aria-pressed="false" data-zh="原型" data-en="Prototype">原型</button><button type="button" data-challenge="test" aria-pressed="false" data-zh="试验" data-en="Test">试验</button></div>
+          <div class="challenge-body" aria-live="polite"><h4 id="challenge-title" data-zh="从一个小摩擦开始" data-en="Start with a small friction">从一个小摩擦开始</h4><p id="challenge-text" data-zh="观察今天的一次不顺手。用一句话写下：谁，在什么情境下，想完成什么？" data-en="Notice one awkward moment today. In one sentence: who is trying to do what, and in which situation?">观察今天的一次不顺手。用一句话写下：谁，在什么情境下，想完成什么？</p></div>
+          <p class="widget-foot mono" data-zh="小问题 → 小原型 → 真实反馈" data-en="SMALL QUESTION → SMALL PROTOTYPE → REAL FEEDBACK">小问题 → 小原型 → 真实反馈</p>
+        </article>
+
+        <article id="drawing" class="widget drawing-widget" aria-labelledby="drawing-title">
+          <div class="widget-heading"><span class="mono widget-number">E / 05</span><span class="widget-glyph" aria-hidden="true">〰</span></div>
+          <h3 id="drawing-title" data-zh="先画一笔" data-en="Start with a mark">先画一笔</h3>
+          <p class="widget-intro" data-zh="不必画得像什么，先让手开始思考。" data-en="It doesn't have to look like anything. Let your hand think.">不必画得像什么，先让手开始思考。</p>
+          <canvas id="draw-canvas" width="640" height="300" tabindex="0" role="img" aria-label="涂鸦画布：拖动绘画，也支持方向键与空格 / Drawing canvas: drag to draw, or use arrow keys and Space"><span data-zh="交互画布需要支持 Canvas 的浏览器。" data-en="This drawing canvas needs a browser with Canvas support.">交互画布需要支持 Canvas 的浏览器。</span></canvas>
+          <div class="drawing-tools"><label class="width-control mono" for="draw-width"><span data-zh="轨迹" data-en="Trails">轨迹</span><input id="draw-width" type="range" min="1" max="5" value="3"></label><button id="draw-clear" class="small-button" type="button" data-zh="清空" data-en="Clear">清空</button><button id="draw-save" class="small-button" type="button" data-zh="保存 SVG ↗" data-en="Save SVG ↗">保存 SVG ↗</button></div>
+          <p class="widget-foot mono" data-zh="拖动画线 · 方向键与空格也能画" data-en="DRAG TO DRAW · ARROW KEYS + SPACE WORK TOO">拖动画线 · 方向键与空格也能画</p>
+        </article>
+
+        <article id="pocket" class="widget pocket-widget" aria-labelledby="pocket-title">
+          <div class="widget-heading"><span class="mono widget-number">F / 06</span><span class="widget-glyph" aria-hidden="true">↳</span></div>
+          <h3 id="pocket-title" data-zh="把念头放进口袋" data-en="Pocket a passing thought">把念头放进口袋</h3>
+          <label class="widget-intro" for="note" data-zh="留下一句话，给下次回来的自己。" data-en="Leave a line for the next time you return.">留下一句话，给下次回来的自己。</label>
+          <textarea id="note" maxlength="1200" rows="5" spellcheck="true"></textarea>
+          <div class="note-bottom"><p id="note-status" class="mono" role="status" data-zh="只保存在此浏览器，不会发送。" data-en="Saved only in this browser. Never sent.">只保存在此浏览器，不会发送。</p><button id="note-clear" class="small-button" type="button" data-zh="清空" data-en="Clear">清空</button></div>
+        </article>
+      </div>
     </section>
-    <section class="closing" aria-labelledby="closing-title">
-      <div class="closing-top"><h2 id="closing-title" data-en="Let's compare notes." data-zh="让想法，继续对话。">Let's compare notes.</h2><a class="text-link" href="https://github.com/KINGKAZMAX"><span data-en="Find me on GitHub" data-zh="在 GitHub 找到我">Find me on GitHub</span><span class="arrow" aria-hidden="true">↗</span></a></div>
-      <p class="closing-description" data-en="I work in design and welcome conversations with design researchers, creative technologists, and open-source collaborators." data-zh="我以设计学为出发点，期待与设计研究者、创意技术实践者和开源社区交流合作。">I work in design and welcome conversations with design researchers, creative technologists, and open-source collaborators.</p>
-      <footer class="mono"><span>ZHIXIN CAI / KINGKAZMAX</span><div class="footer-links"><span data-en="SELECTED PROJECTS, EVOLVING QUESTIONS." data-zh="以作品为入口，以过程为依据。">SELECTED PROJECTS, EVOLVING QUESTIONS.</span><a href="#top" data-en="BACK TO TOP ↑" data-zh="回到顶部 ↑">BACK TO TOP ↑</a></div></footer>
-    </section>
+
+    <section class="closing shell" aria-labelledby="closing-title"><span class="closing-star" aria-hidden="true">✳</span><h2 id="closing-title" data-zh="有些想法成为研究。&#10;有些，只是好奇。" data-en="Some ideas become research.&#10;Others can remain curiosity.">有些想法成为研究。
+有些，只是好奇。</h2><p data-zh="我创作、改编和学习的持续档案。署名、来源与复用条件，以各项记录为准。" data-en="An evolving archive of what I make, adapt, and learn. See individual records for authorship, sources, and reuse terms.">我创作、改编和学习的持续档案。署名、来源与复用条件，以各项记录为准。</p><a class="text-link" href="https://github.com/KINGKAZMAX"><span data-zh="在 GitHub 继续对话" data-en="Continue the conversation on GitHub">在 GitHub 继续对话</span><span aria-hidden="true">↗</span></a></section>
   </main>
-  <noscript><p style="padding:24px">JavaScript is disabled. All project links remain available; interactive controls require JavaScript. / JavaScript 已关闭，仍可使用全部项目链接。</p></noscript>
-  <script>
-    (() => {
-      'use strict';
-      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-      const svgNS = 'http://www.w3.org/2000/svg';
-      const surface = document.getElementById('field-surface');
-      const svg = document.getElementById('field-svg');
-      const contourGroup = document.getElementById('contours');
-      const marker = document.getElementById('field-marker');
-      const motionButton = document.getElementById('motion-toggle');
-      const motionLabel = document.getElementById('motion-label');
-      const coordinates = document.getElementById('field-coordinates');
-      const count = document.getElementById('work-count');
-      const articles = [...document.querySelectorAll('.project')];
-      const paths = [];
-      let language = 'en';
-      let selectedFilter = 'all';
-      let paused = reducedMotion.matches;
-      let visible = true;
-      let requestId = 0;
-      let lastFrame = 0;
-      let phase = 0;
-      let inputX = 0.5;
-      let inputY = 0.5;
-      const clamp = value => Math.max(0, Math.min(1, value));
 
-      contourGroup.replaceChildren();
-      for (let index = 0; index < 40; index += 1) {
-        const path = document.createElementNS(svgNS, 'path');
-        path.setAttribute('stroke', index === 20 || index === 21 ? '#2453ef' : '#6b7588');
-        path.setAttribute('opacity', index === 20 || index === 21 ? '1' : String(0.33 + index / 85));
-        contourGroup.append(path);
-        paths.push(path);
-      }
-
-      function draw() {
-        const influenceX = (inputX - 0.5) * 1.7;
-        const influenceY = (inputY - 0.5) * 1.7;
-        paths.forEach((path, index) => {
-          const radius = 48 + index * 6.5;
-          let d = '';
-          for (let segment = 0; segment <= 128; segment += 1) {
-            const theta = segment / 128 * Math.PI * 2;
-            const wobble = 1 + 0.14 * Math.sin(theta * 3 + index * 0.04 + phase * 0.35)
-              + 0.075 * Math.cos(theta * 2 - phase * 0.21)
-              + influenceX * 0.12 * Math.cos(theta - 0.7)
-              + influenceY * 0.1 * Math.sin(theta * 2);
-            const localX = Math.cos(theta) * radius * wobble;
-            const localY = Math.sin(theta) * radius * wobble * 1.21;
-            const angle = -0.4;
-            const x = 412 + localX * Math.cos(angle) - localY * Math.sin(angle) + influenceX * (40 - index * 0.8);
-            const y = 390 + localX * Math.sin(angle) + localY * Math.cos(angle) + influenceY * (30 - index * 0.5);
-            d += `${segment === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`;
-          }
-          path.setAttribute('d', d + 'Z');
-        });
-        marker.setAttribute('transform', `translate(${(inputX - 0.5) * 120},${(inputY - 0.5) * 120})`);
-        coordinates.textContent = `X ${inputX.toFixed(2)} · Y ${inputY.toFixed(2)}`;
-      }
-
-      function animate(time) {
-        requestId = 0;
-        if (paused || !visible || document.hidden) { lastFrame = 0; return; }
-        if (!lastFrame || time - lastFrame >= 33) {
-          const elapsed = lastFrame ? Math.min(time - lastFrame, 80) : 0;
-          phase += elapsed * 0.00025;
-          lastFrame = time;
-          draw();
-        }
-        requestId = window.requestAnimationFrame(animate);
-      }
-      function schedule() {
-        if (!requestId && !paused && visible && !document.hidden) requestId = window.requestAnimationFrame(animate);
-      }
-      function updateMotionLabel() {
-        motionLabel.textContent = language === 'zh' ? (paused ? '启用动态' : '暂停动态') : (paused ? 'Enable motion' : 'Pause motion');
-      }
-      function setPaused(value) {
-        paused = value;
-        if (requestId) { cancelAnimationFrame(requestId); requestId = 0; }
-        lastFrame = 0;
-        updateMotionLabel();
-        schedule();
-      }
-      function reset() { inputX = 0.5; inputY = 0.5; phase = 0; draw(); }
-      function pointerInput(event) {
-        const rect = surface.getBoundingClientRect();
-        inputX = clamp((event.clientX - rect.left) / rect.width);
-        inputY = clamp((event.clientY - rect.top) / rect.height);
-        if (paused || !visible) draw();
-      }
-      surface.addEventListener('pointermove', event => { if (event.pointerType !== 'touch') pointerInput(event); });
-      surface.addEventListener('pointerdown', event => { pointerInput(event); if (event.pointerType !== 'touch') surface.focus({ preventScroll:true }); });
-      surface.addEventListener('keydown', event => {
-        if (event.metaKey || event.ctrlKey || event.altKey) return;
-        const movements = { ArrowLeft:[-0.06,0], ArrowRight:[0.06,0], ArrowUp:[0,-0.06], ArrowDown:[0,0.06] };
-        if (movements[event.key]) {
-          event.preventDefault();
-          inputX = clamp(inputX + movements[event.key][0]);
-          inputY = clamp(inputY + movements[event.key][1]);
-          draw();
-        } else if (event.code === 'Space') { event.preventDefault(); setPaused(!paused); }
-        else if (event.key.toLowerCase() === 'r') { event.preventDefault(); reset(); }
-      });
-      motionButton.addEventListener('click', () => setPaused(!paused));
-      document.getElementById('field-reset').addEventListener('click', reset);
-      reducedMotion.addEventListener('change', event => { if (event.matches) setPaused(true); });
-      document.addEventListener('visibilitychange', () => { lastFrame = 0; schedule(); });
-      if ('IntersectionObserver' in window) {
-        new IntersectionObserver(entries => { visible = entries[0].isIntersecting; lastFrame = 0; schedule(); }, { threshold:0.05 }).observe(surface);
-      }
-
-      function applyFilter(filter) {
-        selectedFilter = filter;
-        let shown = 0;
-        articles.forEach(article => {
-          const matches = filter === 'all' || article.dataset.categories.split(' ').includes(filter);
-          article.hidden = !matches;
-          if (matches) shown += 1;
-        });
-        document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === filter)));
-        count.textContent = `${String(shown).padStart(2,'0')} / ${String(articles.length).padStart(2,'0')}`;
-        count.setAttribute('aria-label', language === 'zh' ? `显示 ${shown} 个项目，共 ${articles.length} 个` : `Showing ${shown} of ${articles.length} projects`);
-      }
-      document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
-
-      function setLanguage(next, remember = false) {
-        language = next === 'zh' ? 'zh' : 'en';
-        document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
-        document.querySelectorAll('[data-en][data-zh]').forEach(element => { element.textContent = element.dataset[language]; });
-        document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
-        surface.setAttribute('aria-label', language === 'zh' ? '交互线场。方向键改变形态，空格切换动态，R 重置。' : 'Interactive line field. Use arrow keys to change its shape, Space to pause, R to reset.');
-        document.querySelector('.filters').setAttribute('aria-label', language === 'zh' ? '按方向筛选项目' : 'Filter projects by direction');
-        document.querySelector('.header-nav').setAttribute('aria-label', language === 'zh' ? '主要导航' : 'Main navigation');
-        document.title = language === 'zh' ? 'ZHIXIN CAI — 设计与计算' : 'ZHIXIN CAI — Design & Computation';
-        updateMotionLabel();
-        applyFilter(selectedFilter);
-        if (remember) { try { localStorage.setItem('kingkazmax-index-language', language); } catch {} }
-      }
-      document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language, true)));
-      let initialLanguage = 'en';
-      try { initialLanguage = localStorage.getItem('kingkazmax-index-language') || 'en'; } catch {}
-      const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
-      if (requestedLanguage === 'en' || requestedLanguage === 'zh') initialLanguage = requestedLanguage;
-      setLanguage(initialLanguage);
-      draw();
-      schedule();
-    })();
-  </script>
+  <footer class="site-footer shell"><span class="footer-signature mono">ZHIXIN CAI / KINGKAZMAX</span><div class="footer-links"><button id="sound" class="utility" type="button" aria-pressed="false" data-zh="环境音" data-en="Ambient sound">环境音</button><a href="assets.html" data-zh="资产抽屉 ↗" data-en="Asset drawer ↗">资产抽屉 ↗</a><a href="CREDITS.md" data-zh="来源与致谢" data-en="Sources & credits">来源与致谢</a><a href="#top" data-zh="回到顶部 ↑" data-en="Back to top ↑">回到顶部 ↑</a></div></footer>
+  <noscript><p class="noscript shell">JavaScript 已关闭。研究介绍与伙伴静态图仍可阅读；互动工具、计时和本地便笺保存需要启用 JavaScript。<br>JavaScript is off. Research notes and the companion image remain available; interactive tools, timers, and local note saving need JavaScript.</p></noscript>
 </body>
 </html>

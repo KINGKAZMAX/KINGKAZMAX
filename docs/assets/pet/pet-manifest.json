@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "agumon",
+  "displayName": "Agumon",
+  "spriteVersion": 1,
+  "atlas": {
+    "file": "atlas.webp",
+    "width": 1536,
+    "height": 1872,
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "requiredFrames": 57,
+    "unusedCells": 15
+  },
+  "poster": {
+    "file": "poster.png",
+    "state": "idle",
+    "frame": 0
+  },
+  "readmeAnimation": {
+    "file": "agumon.gif",
+    "width": 192,
+    "height": 208,
+    "sequence": [
+      "idle",
+      "idle",
+      "waving",
+      "idle"
+    ],
+    "durationMs": 4000,
+    "frameCount": 22,
+    "loop": true
+  },
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frameCount": 6,
+      "fps": 5.4545,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "durationMs": 1100,
+      "loop": true
+    },
+    "running-right": {
+      "row": 1,
+      "frameCount": 8,
+      "fps": 7.5472,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "durationMs": 1060,
+      "loop": true
+    },
+    "running-left": {
+      "row": 2,
+      "frameCount": 8,
+      "fps": 7.5472,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "durationMs": 1060,
+      "loop": true
+    },
+    "waving": {
+      "row": 3,
+      "frameCount": 4,
+      "fps": 5.7143,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "durationMs": 700,
+      "loop": false
+    },
+    "jumping": {
+      "row": 4,
+      "frameCount": 5,
+      "fps": 5.9524,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "durationMs": 840,
+      "loop": false
+    },
+    "failed": {
+      "row": 5,
+      "frameCount": 8,
+      "fps": 6.5574,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "durationMs": 1220,
+      "loop": false
+    },
+    "waiting": {
+      "row": 6,
+      "frameCount": 6,
+      "fps": 5.9406,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "durationMs": 1010,
+      "loop": true
+    },
+    "running": {
+      "row": 7,
+      "frameCount": 6,
+      "fps": 7.3171,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "durationMs": 820,
+      "loop": true
+    },
+    "review": {
+      "row": 8,
+      "frameCount": 6,
+      "fps": 5.8252,
+      "fpsIsAverage": true,
+      "frameDurationsMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "durationMs": 1030,
+      "loop": true
+    }
+  },
+  "playback": {
+    "timingAuthority": "frameDurationsMs",
+    "defaultState": "idle",
+    "reducedMotionState": "idle",
+    "reducedMotionFrame": 0,
+    "lookDirectionsAvailable": false,
+    "suggestedRenderScale": 1,
+    "imageRendering": "pixelated",
+    "note": "fps is the average rate only; use per-frame durations for exact timing."
+  },
+  "source": {
+    "type": "existing-user-local-pet",
+    "id": "agumon",
+    "originalFile": "spritesheet.webp",
+    "originalSha256": "0ff19c7fcf25d59dc491549550b4b9e7ae5fc5d8491ec74faa32f40e83352c59",
+    "derivation": "Lossless atlas conversion: only RGB of alpha=0 pixels cleared. Existing artwork and frame order retained. GIF is a frame-based preview with binary transparency and indexed color.",
+    "transparentRgbPixelsCleared": 1334554
+  },
+  "notes": [
+    "Nine-row legacy v1 atlas; no look-direction rows or separate happy state.",
+    "Animation timing uses the installed Work Pets 0.1.6 reference defaults; local pet.json does not specify timing.",
+    "The legacy running row visibly depicts locomotion; do not imply it depicts AI processing.",
+    "Agumon is the user-selected existing character; this project does not claim original character authorship."
+  ]
+}

@@ -1,57 +1,52 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
-  <img alt="KINGKAZMAX — ZHIXIN CAI. Design, computation, and interactive experiences." src="assets/profile-light.svg" width="100%">
+  <img alt="KINGKAZMAX — Curiosity Lab. Stay curious. Make room for play." src="assets/profile-light.svg" width="100%">
 </picture>
 
-<p align="right"><a href="https://kingkazmax.github.io/KINGKAZMAX/">Explore the interactive index ↗</a> · <a href="#selected-work">Selected work</a> · <a href="#中文介绍">中文</a></p>
+<p align="center"><b>认真研究，也认真地玩。</b><br><sub>ZHIXIN CAI / KINGKAZMAX · Questions, experiments, and a little curiosity.</sub></p>
 
-## ZHIXIN CAI / KINGKAZMAX
+我在探索：**人与 AI 如何共创、空间如何成为界面、文化如何在互动中被感知与记住。** 正在准备申请 **HCI × AI、计算与空间设计、数字文化与沉浸式体验** 交叉处的博士方向，逐步把兴趣收敛成可研究、可验证的问题。
 
-I work in design, exploring how computation can shape cultural experiences, spatial possibilities, and creative tools.
+Exploring human–AI co-creation, computational and spatial design, and digital culture. Preparing PhD application directions at their intersections—following questions about how we experience, remember, and create.
 
-**Current interests** — Design Research · Creative Coding · Human–AI Interaction · Computational Design · Digital Heritage
+也参加过 **PTCG 比赛**和**黑客松**。游戏、规则、原型与短时间的试验，也是认识我的入口。
 
-Here I share prototypes, design tools, and the processes behind them. I’m interested in conversations with design researchers, creative technologists, and open-source collaborators.
+<p align="center">
+  <a href="https://kingkazmax.github.io/KINGKAZMAX/?action=pat#home"><img src="docs/assets/pet/agumon.gif" width="230" height="249" alt="我的亚古兽：点击摸摸它，进入互动实验室"></a><br>
+  <b>AGUMON / 亚古兽</b><br>
+  <sub>从我的桌面来到这里。点击我，进入可以互动的小世界。</sub><br><br>
+  <a href="https://kingkazmax.github.io/KINGKAZMAX/?action=feed#home">◒ 喂食</a> ·
+  <a href="https://kingkazmax.github.io/KINGKAZMAX/?action=pat#home">♡ 摸头</a> ·
+  <a href="https://kingkazmax.github.io/KINGKAZMAX/?action=play#home">↗ 散步</a> ·
+  <a href="https://kingkazmax.github.io/KINGKAZMAX/?action=rest#home">☾ 安静陪伴</a>
+</p>
 
-### Selected work
+<p align="center"><a href="https://kingkazmax.github.io/KINGKAZMAX/"><b>进入好奇心实验室 / Enter the curiosity lab ↗</b></a></p>
 
-| Project | What to explore | Context |
-|:---|:---|:---|
-| **[贵傩戏 · Nuo Culture Digital Museum](https://github.com/KINGKAZMAX/nuo-culture-digital-museum)** | Point-cloud masks, gesture interaction, and browser-based AR. [Enter the museum ↗](https://kingkazmax.github.io/nuo-culture-digital-museum/) | Cultural experience · Three.js / MediaPipe |
-| **[Urban Co-Creation · Procedural Massing](https://github.com/KINGKAZMAX/DigitalFUTURES2026-UrbanCoCreation-Team4-ProceduralMassing)** | Signed-distance fields, four massing families, and versioned design studies. | DigitalFUTURES 2026 · Team 4 · Rhino / Python |
-| **[Immersive HCI · Evidence Governance](https://github.com/KINGKAZMAX/immersive-hci-evidence-governance)** | A review manuscript, frozen search specification, conceptual figure, and document-building code. | Research in progress · Manuscript & methods |
-| **[AdventuregameX](https://github.com/KINGKAZMAX/AdventuregameX)** | A hub for a tactile 3D Game Boy experience and a virtual-pet toy. | Web experience prototype · Third-party components credited in the repository |
-| **[Artist Archive](https://github.com/KINGKAZMAX/kingkazmax-artist-archive)** | AI-assisted character studies, documented prompts, and a browser-based remix interface. | Creative process archive · Canvas remix |
-| **[DesignVault-Z](https://github.com/KINGKAZMAX/DesignVault-Z)** | A searchable, curated index of design resources. | Resource curation · Sources belong to their respective creators |
+<table>
+<tr><td width="50%"><a href="https://kingkazmax.github.io/KINGKAZMAX/#research"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/research-radar-dark.svg"><img src="assets/research-radar-light.svg" alt="研究雷达：看看我在追问什么" width="100%"></picture></a></td><td width="50%"><a href="https://kingkazmax.github.io/KINGKAZMAX/#collision"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/idea-collider-dark.svg"><img src="assets/idea-collider-light.svg" alt="灵感碰撞器：文化、AI、空间与游戏的新组合" width="100%"></picture></a></td></tr>
+<tr><td><a href="https://kingkazmax.github.io/KINGKAZMAX/#ptcg"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/ptcg-table-dark.svg"><img src="assets/ptcg-table-light.svg" alt="PTCG 桌：翻开一张原创思考卡" width="100%"></picture></a></td><td><a href="https://kingkazmax.github.io/KINGKAZMAX/#focus"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/focus-time-dark.svg"><img src="assets/focus-time-light.svg" alt="亚古兽的专注陪伴计时器" width="100%"></picture></a></td></tr>
+</table>
 
-### Questions I’m exploring
-
-- **Culture × interaction** — How can gestures and spatial interfaces invite closer encounters with cultural material?
-- **Space × computation** — How can a parametric study make design alternatives easier to compare and discuss?
-- **AI × creative practice** — How can AI-assisted workflows preserve the reasoning, attribution, and decisions behind a prototype?
-
-Ongoing questions, explored through prototypes, methods, and documented iterations.
+<p align="center"><a href="https://kingkazmax.github.io/KINGKAZMAX/#hackathon">↯ 原型挑战</a> · <a href="https://kingkazmax.github.io/KINGKAZMAX/#drawing">∿ 画一条轨迹</a> · <a href="https://kingkazmax.github.io/KINGKAZMAX/#pocket">↳ 口袋便签</a> · <a href="https://kingkazmax.github.io/KINGKAZMAX/assets.html">⌘ 资产抽屉</a></p>
 
 <details>
-<summary><b>Process, experiments & collaboration</b></summary>
+<summary><b>展开我的研究问题 / Questions I'm following</b></summary>
 
-I use this space as a working archive: question → prototype → documentation → revision. Individual repositories describe their dependencies, team context, sources, and current limitations.
-
-- **Start with a project:** open its README for context and instructions, then explore the code and design versions.
-- **Discuss a concrete idea:** open an issue in the relevant repository with the question, context, and proposed contribution.
-- **Other experiments:** [P2P LLM OS project archive](docs/p2p-llm-os.md) — an earlier hackathon project; its historical service-status claims have not been revalidated.
-- **Related explorations:** [再观 · exhibition memory](https://github.com/KINGKAZMAX/zaiguan) and [Unbuilt City · an architectural adaptation of Overdrive City](https://github.com/KINGKAZMAX/unbuilt-city).
-- **Browse the full collection:** [organized repository index](docs/REPOSITORIES.md) · [all public repositories](https://github.com/KINGKAZMAX?tab=repositories).
+- **Human × AI** — AI 参与创作时，人的判断在哪里？如何记录推理、选择与共创过程？
+- **Space × Code** — 空间能否成为可以对话的界面？生成规则如何支持理解与参与？
+- **Culture × Experience** — 沉浸体验离开现场之后，还留下什么？如何容纳不同的文化理解与个人记忆？
+- **Play × Learning** — 游戏规则、反馈与数字陪伴，能否成为新的研究入口？这是想继续追问的交叉问题。
 
 </details>
 
-### 中文介绍
+<details>
+<summary><b>一些新的可能性 / Intersections to explore</b></summary>
 
-我是 ZHIXIN CAI，以设计学为出发点，探索计算技术如何参与文化体验、空间设计与创作工具。
+人机共创的决策记录、文化体验的长期记忆、空间生成的参与式设计、数字陪伴中的自主性——这些是新的探索线索，欢迎一起讨论、试验和修正。
 
-这里收录我的交互原型、设计工具与过程记录：从傩文化的数字展陈，到程序化体量研究，再到观展记忆与设计资源整理。也关注 AI 辅助创作中，设计判断、过程记录与来源署名如何被保留下来。
+An evolving archive of what I make, adapt, and learn: [公开资产目录](docs/ASSETS.md). Individual records retain authorship, sources, and reuse terms.
 
-欢迎设计研究、创意编程与开源社区的交流合作。具体项目的协作背景、依赖与素材来源，请以各仓库说明为准。
+</details>
 
----
-<sub>Selected projects, evolving questions. / 以作品为入口，以过程为依据。</sub>
+<sub>这里的动图会播放；喂食、摸头和小组件在互动页运行。研究方向持续发展中。/ Animated here, interactive in the lab. [About & credits](docs/CREDITS.md).</sub>
